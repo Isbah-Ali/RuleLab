@@ -1,0 +1,67 @@
+{
+  "drift_tol": 0.0025,
+  "max_val_drift": 0.0,
+  "per_cap": [
+    {
+      "cap": 0.001,
+      "fit_attacks_blocked": 23247,
+      "fit_collateral": 0.0,
+      "fit_normal_blocked": 0,
+      "rule_text": "dst_host_srv_serror_rate >= 1 AND count >= 22 ; service == Z39_50 ; service == uucp ; service == bgp ; service == uucp_path",
+      "val_attacks_blocked": 10012,
+      "val_collateral": 0.0,
+      "val_drift": 0.0,
+      "val_macro_recall": 0.07866240814583039,
+      "val_normal_blocked": 0,
+      "val_verdict": "SAFE"
+    },
+    {
+      "cap": 0.005,
+      "fit_attacks_blocked": 24221,
+      "fit_collateral": 0.0,
+      "fit_normal_blocked": 0,
+      "rule_text": "dst_host_srv_serror_rate >= 1 AND flag == S0 AND dst_host_diff_srv_rate >= 0.02 ; service == Z39_50 ; service == uucp ; service == bgp ; service == uucp_path",
+      "val_attacks_blocked": 10383,
+      "val_collateral": 0.0,
+      "val_drift": 0.0,
+      "val_macro_recall": 0.08236364270904072,
+      "val_normal_blocked": 0,
+      "val_verdict": "SAFE"
+    },
+    {
+      "cap": 0.01,
+      "fit_attacks_blocked": 24221,
+      "fit_collateral": 0.0,
+      "fit_normal_blocked": 0,
+      "rule_text": "dst_host_srv_serror_rate >= 1 AND flag == S0 AND dst_host_diff_srv_rate >= 0.02 ; service == Z39_50 ; service == uucp ; service == bgp ; service == uucp_path",
+      "val_attacks_blocked": 10383,
+      "val_collateral": 0.0,
+      "val_drift": 0.0,
+      "val_macro_recall": 0.08236364270904072,
+      "val_normal_blocked": 0,
+      "val_verdict": "SAFE"
+    },
+    {
+      "cap": 0.02,
+      "fit_attacks_blocked": 24384,
+      "fit_collateral": 0.0,
+      "fit_normal_blocked": 0,
+      "rule_text": "dst_host_srv_serror_rate >= 1 AND dst_host_serror_rate >= 0.09 AND dst_host_count >= 3 ; service == Z39_50 ; service == uucp ; service == bgp ; service == uucp_path",
+      "val_attacks_blocked": 10448,
+      "val_collateral": 0.0,
+      "val_drift": 0.0,
+      "val_macro_recall": 0.09772195778451427,
+      "val_normal_blocked": 0,
+      "val_verdict": "SAFE"
+    }
+  ],
+  "recommended_cap": 0.02,
+  "recommended_reason": "highest val macro-recall 0.0977 among 4 SAFE caps",
+  "seed": 42,
+  "split_sizes": {
+    "fit": 88181,
+    "val": 37792
+  },
+  "test_loaded": false,
+  "timestamp": "2026-10-09T13:47:33.308347+00:00"
+}

@@ -1,0 +1,354 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 6 /Kids [6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.276 841.890] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 5050 >>
+stream
+BT /F1 8 Tf 0.5 0.5 0.5 rg 54.0 32.0 Td (RuleLab - PROJECT_DOCUMENTATION.pdf - page 1 of 6) Tj ET
+BT /F2 19.0 Tf 0.059 0.090 0.165 rg 54.0 759.9 Td (RuleLab - Project Documentation) Tj ET
+BT /F1 11.0 Tf 0.350 0.400 0.470 rg 54.0 740.9 Td (Firewall-rule safety simulator on the NSL-KDD dataset) Tj ET
+BT /F3 8.2 Tf 0.500 0.500 0.500 rg 54.0 717.9 Td (Generated 2026-10-09. Every figure below was read from files in this) Tj ET
+BT /F3 8.2 Tf 0.500 0.500 0.500 rg 54.0 706.9 Td (repository on that date; nothing is estimated.) Tj ET
+BT /F2 12.5 Tf 0.059 0.090 0.165 rg 54.0 668.9 Td (1. Problem) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 650.5 Td (A firewall rule that blocks attacks also blocks legitimate traffic. Before deploying,) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 637.1 Td (a network defender needs to know: how much labeled-normal traffic would this rule) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 623.7 Td (take down, how does that change on data the rule was not tuned on, and what happens) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 610.3 Td (when an attack family appears that the rule never saw. RuleLab answers all three) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 596.9 Td (offline, on a public dataset, with numbers that are checked by automated tests.) Tj ET
+BT /F2 12.5 Tf 0.059 0.090 0.165 rg 54.0 559.9 Td (2. User) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 541.5 Td (A network or security administrator evaluating firewall rules. This is the persona) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 528.1 Td (stated in the explanation system prompt \(llm.py, SYSTEM_PROMPT: "You explain) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 514.7 Td (firewall-rule metrics to a network or security administrator"\). The UI assumes no) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 501.3 Td (machine-learning background: rules are readable conditions, collateral is a) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 487.9 Td (percentage with a SAFE/CAUTION/UNSAFE pill.) Tj ET
+BT /F2 12.5 Tf 0.059 0.090 0.165 rg 54.0 450.9 Td (3. USP 1 - Live collateral meter) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 432.5 Td (The Builder tab assembles a rule \(3 categorical selectors plus up to 3 numeric) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 419.1 Td (conditions, values taken from fit-split quantiles\) and evaluates it against) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 405.7 Td (Validation and KDDTest+ in the same render: attacks blocked, normal blocked) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 392.3 Td (\(collateral\), precision, verdict, cap drift, a cap-usage gauge, and a per-family) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 378.9 Td (table that prints n<30 instead of a percentage for families under 30 rows. Evaluation) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 365.5 Td (runs off precomputed condition masks, so a slider move updates both datasets) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 352.1 Td (instantly.) Tj ET
+BT /F2 10.5 Tf 0.118 0.161 0.231 rg 54.0 324.1 Td (How it is proven \(tests/smoke_ui.py, 19/19 PASS, 68.9 s wall\)) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 307.7 Td (- p05_c1_both_columns: both dataset columns render attacks-blocked and) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 294.3 Td (  normal-blocked metrics - PASS.) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 277.9 Td (- p05_c2_slider_move_changes_both: moving one slider changes attacks blocked AND) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 264.5 Td (  normal blocked in the same render - PASS.) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 248.1 Td (- p05_c3_median_under_100ms: 50 evaluations of a 3-condition rule over all 37,792) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 234.7 Td (  validation rows: median 34.12 ms, p95 43.20 ms \(target < 100 ms\) - PASS.) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 218.3 Td (- p05_c4_preset_*: the "flag = S0" preset shows exactly the B0 numbers recorded in) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 204.9 Td (  results/eval.json on both splits - PASS.) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 188.5 Td (- p05_c5_delta_appears: delta arrows appear after a change - PASS.) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 172.1 Td (- p05_c6_n_lt_30_rows: families with fewer than 30 rows show n<30 and never a) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 158.7 Td (  percentage - PASS.) Tj ET
+BT /F2 12.5 Tf 0.059 0.090 0.165 rg 54.0 123.7 Td (4. USP 2 - Zero-day rule drill) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 105.3 Td (The drill removes every row of one attack family from the fit split, re-mines rules) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 91.9 Td (on the remainder, and compares recall of the seen rule set against the unseen) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 78.5 Td (\(family-excluded\) rule set on validation and test. It runs for all 10 eligible) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 65.1 Td (families \(n_train >= 100\) at all 4 caps and writes results/drill.json.) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.276 841.890] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 3518 >>
+stream
+BT /F1 8 Tf 0.5 0.5 0.5 rg 54.0 32.0 Td (RuleLab - PROJECT_DOCUMENTATION.pdf - page 2 of 6) Tj ET
+BT /F1 7.5 Tf 0.55 0.6 0.67 rg 54.0 801.9 Td (RuleLab - Project Documentation) Tj ET
+BT /F2 10.5 Tf 0.118 0.161 0.231 rg 54.0 760.9 Td (How it is proven) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 744.5 Td (- All 40 family x cap entries in results/drill.json pass their three assertions:) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 731.1 Td (  assert_0_f_rows_in_unseen_fit, normal_rows_untouched, identities_ok \(0 failures,) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 717.7 Td (  verified\).) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 701.3 Td (- p06_c6_rerun_matches_json - PASS: a live re-run in the UI reproduces drill.json) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 687.9 Td (  exactly for neptune at 1% cap \(seen val recall 0.834115, unseen 0.010919, live) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 674.5 Td (  runtime 1.9 s\).) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 658.1 Td (- p06_c6_two_families_render and p06_c6_rerun_no_exception - PASS.) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 641.7 Td (- Honest outcome, reported as-is: at the default 1% cap 0 of 10 reliable families) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 628.3 Td (  keep >= 50% unseen validation recall; median seen-unseen gap 0.00 pp. Only neptune) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 614.9 Td (  separates \(seen 83.41% vs unseen 1.09%, gap 82.32 pp\).) Tj ET
+BT /F2 12.5 Tf 0.059 0.090 0.165 rg 54.0 579.9 Td (5. Dataset) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 561.5 Td (NSL-KDD text files in data/, loaded by data.py with hard validation: every line must) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 548.1 Td (have exactly 43 fields, no header, non-numeric labels, numeric difficulty; labels are) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 534.7 Td (lowercased, trailing dots stripped; the loader aborts on any violation.) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 518.5 Td (file          rows     fields  labels  largest label        nulls  difficulty) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 507.3 Td (KDDTrain+.txt 125,973  43      23      normal 67,343        0      0-21) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 496.1 Td (KDDTest+.txt   22,544  43      38      normal  9,711        0      0-21) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 484.9 Td (KDDTest+ labels absent from train: 17 \(mscan, apache2, processtable, ...\)) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 464.5 Td (41 features are used \(38 numeric + 3 categorical: protocol_type, service, flag\);) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 451.1 Td (label and difficulty are excluded. Train is split 70/30 stratified by label with seed) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 437.7 Td (42: fit 88,181 rows \(41,041 attacks\), validation 37,792 rows \(17,589 attacks\). The) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 424.3 Td (fit-index sha256 is b7d540719ba6389d0742072aebd79331f6fbbf916864e0efcc17f06ab6ccc50d.) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 410.9 Td (KDDTest+ \(22,544 rows\) is held out entirely.) Tj ET
+BT /F2 12.5 Tf 0.059 0.090 0.165 rg 54.0 373.9 Td (6. Architecture \(Mermaid\)) Tj ET
+BT /F3 8.2 Tf 0.350 0.400 0.470 rg 64.0 357.9 Td (The block below is the Mermaid source that also appears in README.md;) Tj ET
+BT /F3 8.2 Tf 0.350 0.400 0.470 rg 64.0 346.9 Td (it is reproduced as text because this PDF is generated without a diagram renderer.) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.276 841.890] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 5939 >>
+stream
+BT /F1 8 Tf 0.5 0.5 0.5 rg 54.0 32.0 Td (RuleLab - PROJECT_DOCUMENTATION.pdf - page 3 of 6) Tj ET
+BT /F1 7.5 Tf 0.55 0.6 0.67 rg 54.0 801.9 Td (RuleLab - Project Documentation) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 772.7 Td (flowchart TD) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 761.5 Td (    subgraph raw["Raw data \(read-only\)"]) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 750.3 Td (        T["data/KDDTrain+.txt<br/>125,973 x 43"]) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 739.1 Td (        S["data/KDDTest+.txt<br/>22,544 x 43"]) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 727.9 Td (    end) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 716.7 Td (    T --> D["data.py<br/>field/header/label validation<br/>stratified split seed 42"]) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 705.5 Td (    D --> FIT["fit 88,181"]) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 694.3 Td (    D --> VAL["validation 37,792"]) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 683.1 Td (    FIT --> M["miner.py<br/>greedy: max 5 rules x 3 conditions,<br/>min 20 attacks, hard colla) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 671.9 Td (teral cap"]) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 660.7 Td (    FIT --> C["app.py precompute<br/>condition masks x 3 splits"]) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 649.5 Td (    R["rules.py<br/>Condition, metrics, verdict"] --- M) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 638.3 Td (    R --- E["evaluate.py<br/>--eval / --decide / --drill"]) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 627.1 Td (    VAL --> E) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 615.9 Td (    S --> E) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 604.7 Td (    E --> EJ[\("results/eval.json"\)]) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 593.5 Td (    E --> DJ[\("results/decisions.json<br/>\(test never loaded\)"\)]) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 582.3 Td (    E --> DRJ[\("results/drill.json<br/>10 families x 4 caps"\)]) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 571.1 Td (    FIT --> APP["app.py - Streamlit<br/>Builder | Miner | Drill | Evaluation"]) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 559.9 Td (    VAL --> APP) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 548.7 Td (    S --> APP) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 537.5 Td (    C --> APP) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 526.3 Td (    EJ --> APP) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 515.1 Td (    DRJ --> APP) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 503.9 Td (    APP -->|"Explain this rule"| L["llm.py<br/>grounding check + template fallback"]) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 492.7 Td (    L --> G1["gemini-3.5-flash-lite"]) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 481.5 Td (    G1 -->|"429/503/timeout/error"| G2["gemini-3.1-flash-lite"]) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 470.3 Td (    G1 --> GND{"grounding_ok?"}) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 459.1 Td (    G2 --> GND) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 447.9 Td (    GND -->|yes| UI["explanation + source badge"]) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 436.7 Td (    GND -->|no / no key / daily limit| UI2["deterministic template"]) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 425.5 Td (    TST["tests/: 28 unittest + smoke_ui"] -.-> APP) Tj ET
+BT /F2 12.5 Tf 0.059 0.090 0.165 rg 54.0 386.5 Td (7. Data flow) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 368.1 Td (1. data.py reads a raw file only if all validation gates pass \(43 fields per line,) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 354.7 Td (   numeric first field, non-numeric label column, numeric difficulty column\), then) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 341.3 Td (   normalizes labels and derives is_attack.) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 324.9 Td (2. split_fit_val stratifies by label with seed 42 and tags each split) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 311.5 Td (   \(fit.attrs["split"] = "fit"\).) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 295.1 Td (3. miner.py::mine accepts fit rows only \(a hard assertion rejects validation or test) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 281.7 Td (   rows\) and greedily grows up to 5 rules of up to 3 conditions with score = TP -) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 268.3 Td (   lambda*FP, stopping before cumulative fit false positives would exceed the cap.) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 251.9 Td (4. evaluate.py scores B0 \(fixed flag == S0\), B1 \(one rule, one condition\) and B2) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 238.5 Td (   \(full miner\) at caps 0.1/0.5/1.0/2.0% on fit, validation and test; the five) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 225.1 Td (   verification checks V1-V5 must pass or the run exits non-zero; results/eval.json) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 211.7 Td (   is written. --decide patches the test loader to raise so KDDTest+ can never) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 198.3 Td (   influence the decision, and writes results/decisions.json. --drill writes) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 184.9 Td (   results/drill.json.) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 168.5 Td (5. app.py reads the JSON files \(or prints the exact command that creates them\) and) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 155.1 Td (   computes Builder metrics from cached condition masks; mining happens only on an) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 141.7 Td (   explicit button press, never on page load.) Tj ET
+BT /F2 12.5 Tf 0.059 0.090 0.165 rg 54.0 106.7 Td (8. AI flow \(optional\)) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 88.3 Td (1. A JSON context of the numbers already on screen is built \(rule text plus recall,) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 74.9 Td (   collateral, precision, verdict per dataset\).) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.276 841.890] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 13 0 R >>
+endobj
+13 0 obj
+<< /Length 6002 >>
+stream
+BT /F1 8 Tf 0.5 0.5 0.5 rg 54.0 32.0 Td (RuleLab - PROJECT_DOCUMENTATION.pdf - page 4 of 6) Tj ET
+BT /F1 7.5 Tf 0.55 0.6 0.67 rg 54.0 801.9 Td (RuleLab - Project Documentation) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 770.5 Td (2. explain\(\) checks the cache first \(no request\), then the key: missing) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 757.1 Td (   GEMINI_API_KEY returns the deterministic template with reason "missing API key".) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 740.7 Td (3. A daily budget of 450 calls is enforced through results/llm_usage.json; at the) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 727.3 Td (   limit the template is used with reason "daily limit reached".) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 710.9 Td (4. Otherwise a POST goes to) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 697.5 Td (   generativelanguage.googleapis.com/v1beta/models/{model}:generateContent with the) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 684.1 Td (   key in the x-goog-api-key header only, temperature 0.2, maxOutputTokens 300, 30 s) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 670.7 Td (   timeout, at least 4.5 s between calls.) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 654.3 Td (5. The primary model is tried first \(one retry on timeout/429/503\), then the fallback) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 640.9 Td (   model; every number in the reply must appear in the context \(grounding_ok\) or the) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 627.5 Td (   template is used with reason "grounding failed".) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 611.1 Td (6. The UI shows a source badge: primary, backup, or template. Nothing is called when) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 597.7 Td (   the app loads \(0 HTTP calls, asserted in smoke_ui.py\).) Tj ET
+BT /F2 10.5 Tf 0.118 0.161 0.231 rg 54.0 571.7 Td (Gemini model IDs \(pinned in config.py\)) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 557.5 Td (primary   GEMINI_MODEL            = gemini-3.5-flash-lite) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 546.3 Td (fallback  GEMINI_FALLBACK_MODEL   = gemini-3.1-flash-lite) Tj ET
+BT /F2 12.5 Tf 0.059 0.090 0.165 rg 54.0 507.3 Td (9. Measured metrics \(from results/eval.json, run) Tj ET
+BT /F2 12.5 Tf 0.059 0.090 0.165 rg 54.0 490.3 Td (2026-10-09T13:34:53.897896+00:00\)) Tj ET
+BT /F2 10.5 Tf 0.118 0.161 0.231 rg 54.0 462.3 Td (Verification checks - all true) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 448.1 Td (V1  5 fixed rules match df.query\(\) on fit) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 436.9 Td (V2  12 entries x 3 splits consistent) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 425.7 Td (V3  5 rules identical across 2 runs at cap 0.01) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 414.5 Td (V4  B2 fit collateral <= cap at every cap) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 403.3 Td (V5  mine\(\) rejected val and test rows) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 392.1 Td (split sizes: fit 88,181 / val 37,792 / test 22,544) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 380.9 Td (runtime_s 17.29   max_rules 5   max_conds 3   min_tp 20   fallback_max_conds null) Tj ET
+BT /F2 10.5 Tf 0.118 0.161 0.231 rg 54.0 350.9 Td (All 12 entries \(collateral in %, recalls as fractions\)) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 336.7 Td (cap    meth  rules  val_col%  val_rec  val_macro  test_col%  test_rec) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 325.5 Td (0.1%   B0    1      0.4900    0.5889   0.0809     0.0000     0.1569) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 314.3 Td (0.1%   B1    1      0.0346    0.5836   0.0970     0.0309     0.1318) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 303.1 Td (0.1%   B2    5      0.0000    0.5692   0.0787     0.0000     0.1253) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 291.9 Td (0.5%   B0    1      0.4900    0.5889   0.0809     0.0000     0.1569) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 280.7 Td (0.5%   B1    1      0.0346    0.5836   0.0970     0.0309     0.1318) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 269.5 Td (0.5%   B2    5      0.0000    0.5903   0.0824     0.0000     0.1331) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 258.3 Td (1.0%   B0    1      0.4900    0.5889   0.0809     0.0000     0.1569) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 247.1 Td (1.0%   B1    1      0.0346    0.5836   0.0970     0.0309     0.1318) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 235.9 Td (1.0%   B2    5      0.0000    0.5903   0.0824     0.0000     0.1331) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 224.7 Td (2.0%   B0    1      0.4900    0.5889   0.0809     0.0000     0.1569) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 213.5 Td (2.0%   B1    1      0.0346    0.5836   0.0970     0.0309     0.1318) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 202.3 Td (2.0%   B2    5      0.0000    0.5940   0.0977     0.0206     0.1385) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 181.9 Td (Default-cap B2 rule set \(cap 1.0%\), rule_text copied from the file:) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 165.7 Td (dst_host_srv_serror_rate >= 1 AND flag == S0 AND dst_host_diff_srv_rate >= 0.02 ;) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 154.5 Td (service == Z39_50 ; service == uucp ; service == bgp ; service == uucp_path) Tj ET
+BT /F2 10.5 Tf 0.118 0.161 0.231 rg 54.0 124.5 Td (From results/decisions.json \(validation only; test never loaded\)) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 108.1 Td (DRIFT_TOL = 0.0025 \(0.25 pp\): max observed val-minus-fit collateral drift was 0.0000) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 94.7 Td (pp across the 4 caps, so the 0.25 pp floor applied. RECOMMENDED_CAP = 0.02, reason) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 81.3 Td ("highest val macro-recall 0.0977 among 4 SAFE caps"; per-cap validation macro-recall) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 67.9 Td (0.0787 / 0.0824 / 0.0824 / 0.0977, all verdict SAFE.) Tj ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.276 841.890] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 15 0 R >>
+endobj
+15 0 obj
+<< /Length 5297 >>
+stream
+BT /F1 8 Tf 0.5 0.5 0.5 rg 54.0 32.0 Td (RuleLab - PROJECT_DOCUMENTATION.pdf - page 5 of 6) Tj ET
+BT /F1 7.5 Tf 0.55 0.6 0.67 rg 54.0 801.9 Td (RuleLab - Project Documentation) Tj ET
+BT /F2 10.5 Tf 0.118 0.161 0.231 rg 54.0 760.9 Td (From results/drill.json \(runtime_s 48.27, 10 families x 4 caps\)) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 744.5 Td ("10 eligible families at cap 1.0%: 0 of 10 reliable families \(n_val>=30\) keep unseen) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 731.1 Td (validation recall >= 50%; median seen-unseen validation recall gap 0.00 pp.") Tj ET
+BT /F2 10.5 Tf 0.118 0.161 0.231 rg 54.0 703.1 Td (Test and performance measurements) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 686.7 Td (- python -m unittest discover tests: Ran 28 tests, OK \(0.076 s\).) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 670.3 Td (- tests/smoke_ui.py: 19/19 checks PASS \(68.9 s wall\).) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 653.9 Td (- Cold-start runtimes on this machine: --eval 17.29 s \(in-file\), --decide 14.8 s) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 640.5 Td (  \(wall\), --drill 48.27 s \(in-file\), data.py schema report 6.8 s wall \(KDDTrain+) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 627.1 Td (  load 3.69 s, KDDTest+ load 0.61 s\).) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 610.7 Td (- Builder benchmark: median 34.12 ms, p95 43.20 ms for a 3-condition rule over all) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 68.0 597.3 Td (  validation rows \(50 runs\).) Tj ET
+BT /F2 12.5 Tf 0.059 0.090 0.165 rg 54.0 562.3 Td (10. Limitations \(honest\)) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 543.9 Td (1. NSL-KDD is a 1999-era simulation, not real network traffic; the app shows this as) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 530.5 Td (   a permanent banner.) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 514.1 Td (2. Collateral counts labeled-normal rows only; it is not a business-cost estimate and) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 500.7 Td (   knows nothing about traffic volume or importance.) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 484.3 Td (3. Rule sets are conservative: the best SAFE validation macro-recall across caps is) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 470.9 Td (   0.0977, i.e. most families are barely covered.) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 454.5 Td (4. Generalization gap: B2 validation recall 0.5692-0.5940 versus test recall) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 441.1 Td (   0.1253-0.1385 - KDDTest+ differs from the train split.) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 424.7 Td (5. The drill shows the miner does not learn most families: 0/10 reach 50% unseen) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 411.3 Td (   validation recall at the 1% cap; only neptune shows a real seen/unseen gap \(82.32) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 397.9 Td (   pp\).) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 381.5 Td (6. 17 attack families appear only in KDDTest+ and can never be trained on; families) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 368.1 Td (   under 30 rows are shown as n<30 instead of a percentage.) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 351.7 Td (7. The miner is greedy \(not optimal\), capped at 5 rules x 3 conditions, single seed) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 338.3 Td (   42, no cross-validation; the difficulty column is validated but never used as a) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 324.9 Td (   feature.) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 308.5 Td (8. The collateral cap is enforced on the fit split only; validation/test collateral) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 295.1 Td (   is measured, not guaranteed \(e.g. 0.0206% on test at cap 2%\).) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 278.7 Td (9. Verdict thresholds \(UNSAFE > 2%, CAUTION > 0.5% or drift > 0.25 pp, LOW EVIDENCE <) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 265.3 Td (   20 attacks\) are fixed product rules documented in DECISIONS.md, not learned from) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 251.9 Td (   data.) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 235.5 Td (10. The LLM layer is optional: 450 calls/day, a heuristic grounding check, template) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 222.1 Td (    fallback; no metric in the app depends on it; .env is auto-loaded via) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 208.7 Td (    python-dotenv.) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 192.3 Td (11. This is an offline simulator: it does not read live traffic, talk to firewalls,) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 178.9 Td (    or deploy rules.) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 70.0 162.5 Td (12. Performance figures are from single runs on one machine and will vary.) Tj ET
+BT /F2 12.5 Tf 0.059 0.090 0.165 rg 54.0 127.5 Td (11. Run instructions) Tj ET
+BT /F3 8.2 Tf 0.350 0.400 0.470 rg 64.0 111.5 Td (Verified on Windows PowerShell with the repository venv \(Python 3.13.5\).) Tj ET
+BT /F3 8.2 Tf 0.350 0.400 0.470 rg 64.0 100.5 Td (Every command below was executed successfully on this machine; the venv) Tj ET
+BT /F3 8.2 Tf 0.350 0.400 0.470 rg 64.0 89.5 Td (creation line was verified against a scratch path.) Tj ET
+endstream
+endobj
+16 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.276 841.890] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 17 0 R >>
+endobj
+17 0 obj
+<< /Length 4914 >>
+stream
+BT /F1 8 Tf 0.5 0.5 0.5 rg 54.0 32.0 Td (RuleLab - PROJECT_DOCUMENTATION.pdf - page 6 of 6) Tj ET
+BT /F1 7.5 Tf 0.55 0.6 0.67 rg 54.0 801.9 Td (RuleLab - Project Documentation) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 772.7 Td (python -m venv .venv) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 761.5 Td (.\\.venv\\Scripts\\python.exe -m pip install -r requirements.txt) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 750.3 Td () Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 739.1 Td (.\\.venv\\Scripts\\python.exe data.py                 # schema report \(6.8 s\)) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 727.9 Td (.\\.venv\\Scripts\\python.exe evaluate.py --eval      # results/eval.json \(17.3 s\)) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 716.7 Td (.\\.venv\\Scripts\\python.exe evaluate.py --decide    # results/decisions.json \(14.8 s\)) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 705.5 Td (.\\.venv\\Scripts\\python.exe evaluate.py --drill     # results/drill.json \(48.3 s\)) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 694.3 Td () Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 683.1 Td (.\\.venv\\Scripts\\python.exe -m unittest discover tests   # 28 tests) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 671.9 Td (.\\.venv\\Scripts\\python.exe tests\\smoke_ui.py            # 19 checks) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 660.7 Td () Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 649.5 Td (.\\.venv\\Scripts\\python.exe -m streamlit run app.py      # UI at http://localhost:8501) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 629.1 Td (The Evaluation and Drill tabs need their JSON files; if a file is missing the tab) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 615.7 Td (prints the exact command that creates it. Explanations work with no API key) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 602.3 Td (\(deterministic template text\); the key is only needed for model output.) Tj ET
+BT /F2 12.5 Tf 0.059 0.090 0.165 rg 54.0 565.3 Td (12. Environment variables) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 546.9 Td (Read by config.py with os.getenv; names are listed in .env.example.) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 530.7 Td (GEMINI_API_KEY          default: empty   missing/empty -> template, no request) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 519.5 Td (GEMINI_MODEL            default: gemini-3.5-flash-lite   primary model) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 508.3 Td (GEMINI_FALLBACK_MODEL   default: gemini-3.1-flash-lite   tried after failure) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 487.9 Td (A .env file is auto-loaded at startup via python-dotenv \(1.2.4\); variables already) Tj ET
+BT /F1 9.5 Tf 0.000 0.000 0.000 rg 54.0 474.5 Td (set in the shell take precedence.) Tj ET
+BT /F2 12.5 Tf 0.059 0.090 0.165 rg 54.0 437.5 Td (13. Files) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 421.3 Td (config.py     constants: split, caps, thresholds, model IDs, columns) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 410.1 Td (data.py       loader + schema report + stratified split) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 398.9 Td (rules.py      Condition, mask evaluation, metrics, verdict) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 387.7 Td (miner.py      greedy rule miner \(fit split only, hard cap\)) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 376.5 Td (evaluate.py   --eval / --decide / --drill -> results/*.json) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 365.3 Td (llm.py        Gemini calls, grounding check, template fallback) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 354.1 Td (app.py        Streamlit UI \(Builder, Miner, Drill, Evaluation\)) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 342.9 Td (.streamlit/config.toml   dark theme) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 331.7 Td (requirements.txt         numpy, pandas, requests, streamlit \(pinned\)) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 320.5 Td (.env.example             environment variable names) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 309.3 Td (DECISIONS.md             provenance of every threshold value) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 298.1 Td (tests/                   test_rules.py \(18\), test_llm.py \(10\),) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 286.9 Td (                         smoke_ui.py \(19 checks\)) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 275.7 Td (data/                    KDDTrain+.txt, KDDTest+.txt \(read-only\)) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 264.5 Td (results/                 eval.json, decisions.json, drill.json,) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 253.3 Td (                         llm_usage.json \(after first model call\)) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 242.1 Td (README.md                project readme) Tj ET
+BT /F3 8.4 Tf 0.100 0.120 0.160 rg 64.0 230.9 Td (PROJECT_DOCUMENTATION.pdf  this document) Tj ET
+endstream
+endobj
+xref
+0 18
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000155 00000 n 
+0000000252 00000 n 
+0000000354 00000 n 
+0000000449 00000 n 
+0000000603 00000 n 
+0000005705 00000 n 
+0000005859 00000 n 
+0000009429 00000 n 
+0000009585 00000 n 
+0000015577 00000 n 
+0000015733 00000 n 
+0000021788 00000 n 
+0000021944 00000 n 
+0000027294 00000 n 
+0000027450 00000 n 
+trailer
+<< /Size 18 /Root 1 0 R >>
+startxref
+32417
+%%EOF

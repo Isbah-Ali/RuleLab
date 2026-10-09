@@ -1,0 +1,4845 @@
+{
+  "check_details": {
+    "V1": "5 fixed rules match df.query() on fit",
+    "V2": "12 entries x 3 splits consistent",
+    "V3": "5 rules identical across 2 runs at cap 0.01",
+    "V4": "B2 fit collateral <= cap at every cap",
+    "V5": "mine() rejected val and test rows"
+  },
+  "checks": {
+    "V1": true,
+    "V2": true,
+    "V3": true,
+    "V4": true,
+    "V5": true
+  },
+  "entries": [
+    {
+      "cap": 0.001,
+      "cap_drift_test": -0.005409418752651676,
+      "cap_drift_val": -0.000509156415375034,
+      "fit": {
+        "attacks_blocked": 24139,
+        "attacks_total": 41041,
+        "collateral_rate": 0.005409418752651676,
+        "macro_recall": 0.07343126497182205,
+        "normal_blocked": 255,
+        "normal_total": 47140,
+        "per_family": {
+          "back": [
+            0,
+            669
+          ],
+          "buffer_overflow": [
+            0,
+            21
+          ],
+          "ftp_write": [
+            0,
+            6
+          ],
+          "guess_passwd": [
+            0,
+            37
+          ],
+          "imap": [
+            0,
+            8
+          ],
+          "ipsweep": [
+            0,
+            2519
+          ],
+          "land": [
+            13,
+            13
+          ],
+          "loadmodule": [
+            0,
+            6
+          ],
+          "multihop": [
+            0,
+            5
+          ],
+          "neptune": [
+            24025,
+            28850
+          ],
+          "nmap": [
+            0,
+            1045
+          ],
+          "normal": [
+            255,
+            47140
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            3
+          ],
+          "pod": [
+            0,
+            141
+          ],
+          "portsweep": [
+            35,
+            2052
+          ],
+          "rootkit": [
+            0,
+            7
+          ],
+          "satan": [
+            66,
+            2543
+          ],
+          "smurf": [
+            0,
+            1852
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            624
+          ],
+          "warezclient": [
+            0,
+            623
+          ],
+          "warezmaster": [
+            0,
+            14
+          ]
+        },
+        "precision": 0.9895466098220874,
+        "recall": 0.5881679296313442
+      },
+      "method": "B0",
+      "n_rules": 1,
+      "rule_text": "flag == S0",
+      "rules": [
+        [
+          [
+            "flag",
+            "==",
+            "S0"
+          ]
+        ]
+      ],
+      "test": {
+        "attacks_blocked": 2013,
+        "attacks_total": 12833,
+        "collateral_rate": 0.0,
+        "macro_recall": 0.05047063669462393,
+        "normal_blocked": 0,
+        "normal_total": 9711,
+        "per_family": {
+          "apache2": [
+            246,
+            737
+          ],
+          "back": [
+            0,
+            359
+          ],
+          "buffer_overflow": [
+            0,
+            20
+          ],
+          "ftp_write": [
+            0,
+            3
+          ],
+          "guess_passwd": [
+            0,
+            1231
+          ],
+          "httptunnel": [
+            0,
+            133
+          ],
+          "imap": [
+            0,
+            1
+          ],
+          "ipsweep": [
+            0,
+            141
+          ],
+          "land": [
+            7,
+            7
+          ],
+          "loadmodule": [
+            0,
+            2
+          ],
+          "mailbomb": [
+            0,
+            293
+          ],
+          "mscan": [
+            166,
+            996
+          ],
+          "multihop": [
+            0,
+            18
+          ],
+          "named": [
+            0,
+            17
+          ],
+          "neptune": [
+            1522,
+            4657
+          ],
+          "nmap": [
+            0,
+            73
+          ],
+          "normal": [
+            0,
+            9711
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            2
+          ],
+          "pod": [
+            0,
+            41
+          ],
+          "portsweep": [
+            0,
+            157
+          ],
+          "processtable": [
+            0,
+            685
+          ],
+          "ps": [
+            0,
+            15
+          ],
+          "rootkit": [
+            0,
+            13
+          ],
+          "saint": [
+            19,
+            319
+          ],
+          "satan": [
+            53,
+            735
+          ],
+          "sendmail": [
+            0,
+            14
+          ],
+          "smurf": [
+            0,
+            665
+          ],
+          "snmpgetattack": [
+            0,
+            178
+          ],
+          "snmpguess": [
+            0,
+            331
+          ],
+          "sqlattack": [
+            0,
+            2
+          ],
+          "teardrop": [
+            0,
+            12
+          ],
+          "udpstorm": [
+            0,
+            2
+          ],
+          "warezmaster": [
+            0,
+            944
+          ],
+          "worm": [
+            0,
+            2
+          ],
+          "xlock": [
+            0,
+            9
+          ],
+          "xsnoop": [
+            0,
+            4
+          ],
+          "xterm": [
+            0,
+            13
+          ]
+        },
+        "precision": 1.0,
+        "recall": 0.15686121717447207
+      },
+      "val": {
+        "attacks_blocked": 10358,
+        "attacks_total": 17589,
+        "collateral_rate": 0.004900262337276642,
+        "macro_recall": 0.08090323429238327,
+        "normal_blocked": 99,
+        "normal_total": 20203,
+        "per_family": {
+          "back": [
+            0,
+            287
+          ],
+          "buffer_overflow": [
+            0,
+            9
+          ],
+          "ftp_write": [
+            0,
+            2
+          ],
+          "guess_passwd": [
+            0,
+            16
+          ],
+          "imap": [
+            0,
+            3
+          ],
+          "ipsweep": [
+            0,
+            1080
+          ],
+          "land": [
+            5,
+            5
+          ],
+          "loadmodule": [
+            0,
+            3
+          ],
+          "multihop": [
+            0,
+            2
+          ],
+          "neptune": [
+            10301,
+            12364
+          ],
+          "nmap": [
+            0,
+            448
+          ],
+          "normal": [
+            99,
+            20203
+          ],
+          "perl": [
+            0,
+            1
+          ],
+          "phf": [
+            0,
+            1
+          ],
+          "pod": [
+            0,
+            60
+          ],
+          "portsweep": [
+            19,
+            879
+          ],
+          "rootkit": [
+            0,
+            3
+          ],
+          "satan": [
+            33,
+            1090
+          ],
+          "smurf": [
+            0,
+            794
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            268
+          ],
+          "warezclient": [
+            0,
+            267
+          ],
+          "warezmaster": [
+            0,
+            6
+          ]
+        },
+        "precision": 0.9905326575499666,
+        "recall": 0.5888907840127352
+      }
+    },
+    {
+      "cap": 0.001,
+      "cap_drift_test": -0.00024262055893034627,
+      "cap_drift_val": -0.00020506538313672443,
+      "fit": {
+        "attacks_blocked": 23958,
+        "attacks_total": 41041,
+        "collateral_rate": 0.0005515485787017395,
+        "macro_recall": 0.08818306901903815,
+        "normal_blocked": 26,
+        "normal_total": 47140,
+        "per_family": {
+          "back": [
+            0,
+            669
+          ],
+          "buffer_overflow": [
+            0,
+            21
+          ],
+          "ftp_write": [
+            0,
+            6
+          ],
+          "guess_passwd": [
+            1,
+            37
+          ],
+          "imap": [
+            2,
+            8
+          ],
+          "ipsweep": [
+            0,
+            2519
+          ],
+          "land": [
+            6,
+            13
+          ],
+          "loadmodule": [
+            0,
+            6
+          ],
+          "multihop": [
+            0,
+            5
+          ],
+          "neptune": [
+            23677,
+            28850
+          ],
+          "nmap": [
+            175,
+            1045
+          ],
+          "normal": [
+            26,
+            47140
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            3
+          ],
+          "pod": [
+            0,
+            141
+          ],
+          "portsweep": [
+            33,
+            2052
+          ],
+          "rootkit": [
+            0,
+            7
+          ],
+          "satan": [
+            63,
+            2543
+          ],
+          "smurf": [
+            0,
+            1852
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            624
+          ],
+          "warezclient": [
+            1,
+            623
+          ],
+          "warezmaster": [
+            0,
+            14
+          ]
+        },
+        "precision": 0.9989159439626417,
+        "recall": 0.5837577057089253
+      },
+      "method": "B1",
+      "n_rules": 1,
+      "rule_text": "dst_host_srv_serror_rate >= 1",
+      "rules": [
+        [
+          [
+            "dst_host_srv_serror_rate",
+            ">=",
+            1.0
+          ]
+        ]
+      ],
+      "test": {
+        "attacks_blocked": 1691,
+        "attacks_total": 12833,
+        "collateral_rate": 0.00030892801977139327,
+        "macro_recall": 0.08225806081076048,
+        "normal_blocked": 3,
+        "normal_total": 9711,
+        "per_family": {
+          "apache2": [
+            0,
+            737
+          ],
+          "back": [
+            0,
+            359
+          ],
+          "buffer_overflow": [
+            0,
+            20
+          ],
+          "ftp_write": [
+            0,
+            3
+          ],
+          "guess_passwd": [
+            0,
+            1231
+          ],
+          "httptunnel": [
+            0,
+            133
+          ],
+          "imap": [
+            0,
+            1
+          ],
+          "ipsweep": [
+            0,
+            141
+          ],
+          "land": [
+            5,
+            7
+          ],
+          "loadmodule": [
+            0,
+            2
+          ],
+          "mailbomb": [
+            0,
+            293
+          ],
+          "mscan": [
+            127,
+            996
+          ],
+          "multihop": [
+            0,
+            18
+          ],
+          "named": [
+            0,
+            17
+          ],
+          "neptune": [
+            1413,
+            4657
+          ],
+          "nmap": [
+            73,
+            73
+          ],
+          "normal": [
+            3,
+            9711
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            2
+          ],
+          "pod": [
+            0,
+            41
+          ],
+          "portsweep": [
+            0,
+            157
+          ],
+          "processtable": [
+            0,
+            685
+          ],
+          "ps": [
+            0,
+            15
+          ],
+          "rootkit": [
+            0,
+            13
+          ],
+          "saint": [
+            19,
+            319
+          ],
+          "satan": [
+            53,
+            735
+          ],
+          "sendmail": [
+            0,
+            14
+          ],
+          "smurf": [
+            0,
+            665
+          ],
+          "snmpgetattack": [
+            0,
+            178
+          ],
+          "snmpguess": [
+            0,
+            331
+          ],
+          "sqlattack": [
+            0,
+            2
+          ],
+          "teardrop": [
+            0,
+            12
+          ],
+          "udpstorm": [
+            0,
+            2
+          ],
+          "warezmaster": [
+            0,
+            944
+          ],
+          "worm": [
+            0,
+            2
+          ],
+          "xlock": [
+            0,
+            9
+          ],
+          "xsnoop": [
+            1,
+            4
+          ],
+          "xterm": [
+            0,
+            13
+          ]
+        },
+        "precision": 0.9982290436835891,
+        "recall": 0.13176965635471052
+      },
+      "val": {
+        "attacks_blocked": 10265,
+        "attacks_total": 17589,
+        "collateral_rate": 0.0003464831955650151,
+        "macro_recall": 0.09704496491673797,
+        "normal_blocked": 7,
+        "normal_total": 20203,
+        "per_family": {
+          "back": [
+            0,
+            287
+          ],
+          "buffer_overflow": [
+            0,
+            9
+          ],
+          "ftp_write": [
+            0,
+            2
+          ],
+          "guess_passwd": [
+            0,
+            16
+          ],
+          "imap": [
+            0,
+            3
+          ],
+          "ipsweep": [
+            0,
+            1080
+          ],
+          "land": [
+            1,
+            5
+          ],
+          "loadmodule": [
+            0,
+            3
+          ],
+          "multihop": [
+            0,
+            2
+          ],
+          "neptune": [
+            10124,
+            12364
+          ],
+          "nmap": [
+            88,
+            448
+          ],
+          "normal": [
+            7,
+            20203
+          ],
+          "perl": [
+            0,
+            1
+          ],
+          "phf": [
+            0,
+            1
+          ],
+          "pod": [
+            0,
+            60
+          ],
+          "portsweep": [
+            19,
+            879
+          ],
+          "rootkit": [
+            0,
+            3
+          ],
+          "satan": [
+            33,
+            1090
+          ],
+          "smurf": [
+            0,
+            794
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            268
+          ],
+          "warezclient": [
+            0,
+            267
+          ],
+          "warezmaster": [
+            0,
+            6
+          ]
+        },
+        "precision": 0.9993185358255452,
+        "recall": 0.5836033884814372
+      }
+    },
+    {
+      "cap": 0.001,
+      "cap_drift_test": 0.0,
+      "cap_drift_val": 0.0,
+      "fit": {
+        "attacks_blocked": 23247,
+        "attacks_total": 41041,
+        "collateral_rate": 0.0,
+        "macro_recall": 0.07109476898454614,
+        "normal_blocked": 0,
+        "normal_total": 47140,
+        "per_family": {
+          "back": [
+            0,
+            669
+          ],
+          "buffer_overflow": [
+            0,
+            21
+          ],
+          "ftp_write": [
+            0,
+            6
+          ],
+          "guess_passwd": [
+            0,
+            37
+          ],
+          "imap": [
+            0,
+            8
+          ],
+          "ipsweep": [
+            0,
+            2519
+          ],
+          "land": [
+            0,
+            13
+          ],
+          "loadmodule": [
+            0,
+            6
+          ],
+          "multihop": [
+            0,
+            5
+          ],
+          "neptune": [
+            23132,
+            28850
+          ],
+          "nmap": [
+            4,
+            1045
+          ],
+          "normal": [
+            0,
+            47140
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            3
+          ],
+          "pod": [
+            0,
+            141
+          ],
+          "portsweep": [
+            41,
+            2052
+          ],
+          "rootkit": [
+            0,
+            7
+          ],
+          "satan": [
+            70,
+            2543
+          ],
+          "smurf": [
+            0,
+            1852
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            624
+          ],
+          "warezclient": [
+            0,
+            623
+          ],
+          "warezmaster": [
+            0,
+            14
+          ]
+        },
+        "precision": 1.0,
+        "recall": 0.5664335664335665
+      },
+      "method": "B2",
+      "n_rules": 5,
+      "rule_text": "dst_host_srv_serror_rate >= 1 AND count >= 22 ; service == Z39_50 ; service == uucp ; service == bgp ; service == uucp_path",
+      "rules": [
+        [
+          [
+            "dst_host_srv_serror_rate",
+            ">=",
+            1.0
+          ],
+          [
+            "count",
+            ">=",
+            22.0
+          ]
+        ],
+        [
+          [
+            "service",
+            "==",
+            "Z39_50"
+          ]
+        ],
+        [
+          [
+            "service",
+            "==",
+            "uucp"
+          ]
+        ],
+        [
+          [
+            "service",
+            "==",
+            "bgp"
+          ]
+        ],
+        [
+          [
+            "service",
+            "==",
+            "uucp_path"
+          ]
+        ]
+      ],
+      "test": {
+        "attacks_blocked": 1608,
+        "attacks_total": 12833,
+        "collateral_rate": 0.0,
+        "macro_recall": 0.02527324384769185,
+        "normal_blocked": 0,
+        "normal_total": 9711,
+        "per_family": {
+          "apache2": [
+            0,
+            737
+          ],
+          "back": [
+            0,
+            359
+          ],
+          "buffer_overflow": [
+            0,
+            20
+          ],
+          "ftp_write": [
+            0,
+            3
+          ],
+          "guess_passwd": [
+            0,
+            1231
+          ],
+          "httptunnel": [
+            0,
+            133
+          ],
+          "imap": [
+            0,
+            1
+          ],
+          "ipsweep": [
+            0,
+            141
+          ],
+          "land": [
+            0,
+            7
+          ],
+          "loadmodule": [
+            0,
+            2
+          ],
+          "mailbomb": [
+            0,
+            293
+          ],
+          "mscan": [
+            0,
+            996
+          ],
+          "multihop": [
+            0,
+            18
+          ],
+          "named": [
+            0,
+            17
+          ],
+          "neptune": [
+            1532,
+            4657
+          ],
+          "nmap": [
+            1,
+            73
+          ],
+          "normal": [
+            0,
+            9711
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            2
+          ],
+          "pod": [
+            0,
+            41
+          ],
+          "portsweep": [
+            0,
+            157
+          ],
+          "processtable": [
+            0,
+            685
+          ],
+          "ps": [
+            0,
+            15
+          ],
+          "rootkit": [
+            0,
+            13
+          ],
+          "saint": [
+            20,
+            319
+          ],
+          "satan": [
+            55,
+            735
+          ],
+          "sendmail": [
+            0,
+            14
+          ],
+          "smurf": [
+            0,
+            665
+          ],
+          "snmpgetattack": [
+            0,
+            178
+          ],
+          "snmpguess": [
+            0,
+            331
+          ],
+          "sqlattack": [
+            0,
+            2
+          ],
+          "teardrop": [
+            0,
+            12
+          ],
+          "udpstorm": [
+            0,
+            2
+          ],
+          "warezmaster": [
+            0,
+            944
+          ],
+          "worm": [
+            0,
+            2
+          ],
+          "xlock": [
+            0,
+            9
+          ],
+          "xsnoop": [
+            0,
+            4
+          ],
+          "xterm": [
+            0,
+            13
+          ]
+        },
+        "precision": 1.0,
+        "recall": 0.12530195589495832
+      },
+      "val": {
+        "attacks_blocked": 10012,
+        "attacks_total": 17589,
+        "collateral_rate": 0.0,
+        "macro_recall": 0.07866240814583039,
+        "normal_blocked": 0,
+        "normal_total": 20203,
+        "per_family": {
+          "back": [
+            0,
+            287
+          ],
+          "buffer_overflow": [
+            0,
+            9
+          ],
+          "ftp_write": [
+            0,
+            2
+          ],
+          "guess_passwd": [
+            0,
+            16
+          ],
+          "imap": [
+            0,
+            3
+          ],
+          "ipsweep": [
+            0,
+            1080
+          ],
+          "land": [
+            0,
+            5
+          ],
+          "loadmodule": [
+            0,
+            3
+          ],
+          "multihop": [
+            0,
+            2
+          ],
+          "neptune": [
+            9953,
+            12364
+          ],
+          "nmap": [
+            1,
+            448
+          ],
+          "normal": [
+            0,
+            20203
+          ],
+          "perl": [
+            0,
+            1
+          ],
+          "phf": [
+            0,
+            1
+          ],
+          "pod": [
+            0,
+            60
+          ],
+          "portsweep": [
+            22,
+            879
+          ],
+          "rootkit": [
+            0,
+            3
+          ],
+          "satan": [
+            36,
+            1090
+          ],
+          "smurf": [
+            0,
+            794
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            268
+          ],
+          "warezclient": [
+            0,
+            267
+          ],
+          "warezmaster": [
+            0,
+            6
+          ]
+        },
+        "precision": 1.0,
+        "recall": 0.5692193984876912
+      }
+    },
+    {
+      "cap": 0.005,
+      "cap_drift_test": -0.005409418752651676,
+      "cap_drift_val": -0.000509156415375034,
+      "fit": {
+        "attacks_blocked": 24139,
+        "attacks_total": 41041,
+        "collateral_rate": 0.005409418752651676,
+        "macro_recall": 0.07343126497182205,
+        "normal_blocked": 255,
+        "normal_total": 47140,
+        "per_family": {
+          "back": [
+            0,
+            669
+          ],
+          "buffer_overflow": [
+            0,
+            21
+          ],
+          "ftp_write": [
+            0,
+            6
+          ],
+          "guess_passwd": [
+            0,
+            37
+          ],
+          "imap": [
+            0,
+            8
+          ],
+          "ipsweep": [
+            0,
+            2519
+          ],
+          "land": [
+            13,
+            13
+          ],
+          "loadmodule": [
+            0,
+            6
+          ],
+          "multihop": [
+            0,
+            5
+          ],
+          "neptune": [
+            24025,
+            28850
+          ],
+          "nmap": [
+            0,
+            1045
+          ],
+          "normal": [
+            255,
+            47140
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            3
+          ],
+          "pod": [
+            0,
+            141
+          ],
+          "portsweep": [
+            35,
+            2052
+          ],
+          "rootkit": [
+            0,
+            7
+          ],
+          "satan": [
+            66,
+            2543
+          ],
+          "smurf": [
+            0,
+            1852
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            624
+          ],
+          "warezclient": [
+            0,
+            623
+          ],
+          "warezmaster": [
+            0,
+            14
+          ]
+        },
+        "precision": 0.9895466098220874,
+        "recall": 0.5881679296313442
+      },
+      "method": "B0",
+      "n_rules": 1,
+      "rule_text": "flag == S0",
+      "rules": [
+        [
+          [
+            "flag",
+            "==",
+            "S0"
+          ]
+        ]
+      ],
+      "test": {
+        "attacks_blocked": 2013,
+        "attacks_total": 12833,
+        "collateral_rate": 0.0,
+        "macro_recall": 0.05047063669462393,
+        "normal_blocked": 0,
+        "normal_total": 9711,
+        "per_family": {
+          "apache2": [
+            246,
+            737
+          ],
+          "back": [
+            0,
+            359
+          ],
+          "buffer_overflow": [
+            0,
+            20
+          ],
+          "ftp_write": [
+            0,
+            3
+          ],
+          "guess_passwd": [
+            0,
+            1231
+          ],
+          "httptunnel": [
+            0,
+            133
+          ],
+          "imap": [
+            0,
+            1
+          ],
+          "ipsweep": [
+            0,
+            141
+          ],
+          "land": [
+            7,
+            7
+          ],
+          "loadmodule": [
+            0,
+            2
+          ],
+          "mailbomb": [
+            0,
+            293
+          ],
+          "mscan": [
+            166,
+            996
+          ],
+          "multihop": [
+            0,
+            18
+          ],
+          "named": [
+            0,
+            17
+          ],
+          "neptune": [
+            1522,
+            4657
+          ],
+          "nmap": [
+            0,
+            73
+          ],
+          "normal": [
+            0,
+            9711
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            2
+          ],
+          "pod": [
+            0,
+            41
+          ],
+          "portsweep": [
+            0,
+            157
+          ],
+          "processtable": [
+            0,
+            685
+          ],
+          "ps": [
+            0,
+            15
+          ],
+          "rootkit": [
+            0,
+            13
+          ],
+          "saint": [
+            19,
+            319
+          ],
+          "satan": [
+            53,
+            735
+          ],
+          "sendmail": [
+            0,
+            14
+          ],
+          "smurf": [
+            0,
+            665
+          ],
+          "snmpgetattack": [
+            0,
+            178
+          ],
+          "snmpguess": [
+            0,
+            331
+          ],
+          "sqlattack": [
+            0,
+            2
+          ],
+          "teardrop": [
+            0,
+            12
+          ],
+          "udpstorm": [
+            0,
+            2
+          ],
+          "warezmaster": [
+            0,
+            944
+          ],
+          "worm": [
+            0,
+            2
+          ],
+          "xlock": [
+            0,
+            9
+          ],
+          "xsnoop": [
+            0,
+            4
+          ],
+          "xterm": [
+            0,
+            13
+          ]
+        },
+        "precision": 1.0,
+        "recall": 0.15686121717447207
+      },
+      "val": {
+        "attacks_blocked": 10358,
+        "attacks_total": 17589,
+        "collateral_rate": 0.004900262337276642,
+        "macro_recall": 0.08090323429238327,
+        "normal_blocked": 99,
+        "normal_total": 20203,
+        "per_family": {
+          "back": [
+            0,
+            287
+          ],
+          "buffer_overflow": [
+            0,
+            9
+          ],
+          "ftp_write": [
+            0,
+            2
+          ],
+          "guess_passwd": [
+            0,
+            16
+          ],
+          "imap": [
+            0,
+            3
+          ],
+          "ipsweep": [
+            0,
+            1080
+          ],
+          "land": [
+            5,
+            5
+          ],
+          "loadmodule": [
+            0,
+            3
+          ],
+          "multihop": [
+            0,
+            2
+          ],
+          "neptune": [
+            10301,
+            12364
+          ],
+          "nmap": [
+            0,
+            448
+          ],
+          "normal": [
+            99,
+            20203
+          ],
+          "perl": [
+            0,
+            1
+          ],
+          "phf": [
+            0,
+            1
+          ],
+          "pod": [
+            0,
+            60
+          ],
+          "portsweep": [
+            19,
+            879
+          ],
+          "rootkit": [
+            0,
+            3
+          ],
+          "satan": [
+            33,
+            1090
+          ],
+          "smurf": [
+            0,
+            794
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            268
+          ],
+          "warezclient": [
+            0,
+            267
+          ],
+          "warezmaster": [
+            0,
+            6
+          ]
+        },
+        "precision": 0.9905326575499666,
+        "recall": 0.5888907840127352
+      }
+    },
+    {
+      "cap": 0.005,
+      "cap_drift_test": -0.00024262055893034627,
+      "cap_drift_val": -0.00020506538313672443,
+      "fit": {
+        "attacks_blocked": 23958,
+        "attacks_total": 41041,
+        "collateral_rate": 0.0005515485787017395,
+        "macro_recall": 0.08818306901903815,
+        "normal_blocked": 26,
+        "normal_total": 47140,
+        "per_family": {
+          "back": [
+            0,
+            669
+          ],
+          "buffer_overflow": [
+            0,
+            21
+          ],
+          "ftp_write": [
+            0,
+            6
+          ],
+          "guess_passwd": [
+            1,
+            37
+          ],
+          "imap": [
+            2,
+            8
+          ],
+          "ipsweep": [
+            0,
+            2519
+          ],
+          "land": [
+            6,
+            13
+          ],
+          "loadmodule": [
+            0,
+            6
+          ],
+          "multihop": [
+            0,
+            5
+          ],
+          "neptune": [
+            23677,
+            28850
+          ],
+          "nmap": [
+            175,
+            1045
+          ],
+          "normal": [
+            26,
+            47140
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            3
+          ],
+          "pod": [
+            0,
+            141
+          ],
+          "portsweep": [
+            33,
+            2052
+          ],
+          "rootkit": [
+            0,
+            7
+          ],
+          "satan": [
+            63,
+            2543
+          ],
+          "smurf": [
+            0,
+            1852
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            624
+          ],
+          "warezclient": [
+            1,
+            623
+          ],
+          "warezmaster": [
+            0,
+            14
+          ]
+        },
+        "precision": 0.9989159439626417,
+        "recall": 0.5837577057089253
+      },
+      "method": "B1",
+      "n_rules": 1,
+      "rule_text": "dst_host_srv_serror_rate >= 1",
+      "rules": [
+        [
+          [
+            "dst_host_srv_serror_rate",
+            ">=",
+            1.0
+          ]
+        ]
+      ],
+      "test": {
+        "attacks_blocked": 1691,
+        "attacks_total": 12833,
+        "collateral_rate": 0.00030892801977139327,
+        "macro_recall": 0.08225806081076048,
+        "normal_blocked": 3,
+        "normal_total": 9711,
+        "per_family": {
+          "apache2": [
+            0,
+            737
+          ],
+          "back": [
+            0,
+            359
+          ],
+          "buffer_overflow": [
+            0,
+            20
+          ],
+          "ftp_write": [
+            0,
+            3
+          ],
+          "guess_passwd": [
+            0,
+            1231
+          ],
+          "httptunnel": [
+            0,
+            133
+          ],
+          "imap": [
+            0,
+            1
+          ],
+          "ipsweep": [
+            0,
+            141
+          ],
+          "land": [
+            5,
+            7
+          ],
+          "loadmodule": [
+            0,
+            2
+          ],
+          "mailbomb": [
+            0,
+            293
+          ],
+          "mscan": [
+            127,
+            996
+          ],
+          "multihop": [
+            0,
+            18
+          ],
+          "named": [
+            0,
+            17
+          ],
+          "neptune": [
+            1413,
+            4657
+          ],
+          "nmap": [
+            73,
+            73
+          ],
+          "normal": [
+            3,
+            9711
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            2
+          ],
+          "pod": [
+            0,
+            41
+          ],
+          "portsweep": [
+            0,
+            157
+          ],
+          "processtable": [
+            0,
+            685
+          ],
+          "ps": [
+            0,
+            15
+          ],
+          "rootkit": [
+            0,
+            13
+          ],
+          "saint": [
+            19,
+            319
+          ],
+          "satan": [
+            53,
+            735
+          ],
+          "sendmail": [
+            0,
+            14
+          ],
+          "smurf": [
+            0,
+            665
+          ],
+          "snmpgetattack": [
+            0,
+            178
+          ],
+          "snmpguess": [
+            0,
+            331
+          ],
+          "sqlattack": [
+            0,
+            2
+          ],
+          "teardrop": [
+            0,
+            12
+          ],
+          "udpstorm": [
+            0,
+            2
+          ],
+          "warezmaster": [
+            0,
+            944
+          ],
+          "worm": [
+            0,
+            2
+          ],
+          "xlock": [
+            0,
+            9
+          ],
+          "xsnoop": [
+            1,
+            4
+          ],
+          "xterm": [
+            0,
+            13
+          ]
+        },
+        "precision": 0.9982290436835891,
+        "recall": 0.13176965635471052
+      },
+      "val": {
+        "attacks_blocked": 10265,
+        "attacks_total": 17589,
+        "collateral_rate": 0.0003464831955650151,
+        "macro_recall": 0.09704496491673797,
+        "normal_blocked": 7,
+        "normal_total": 20203,
+        "per_family": {
+          "back": [
+            0,
+            287
+          ],
+          "buffer_overflow": [
+            0,
+            9
+          ],
+          "ftp_write": [
+            0,
+            2
+          ],
+          "guess_passwd": [
+            0,
+            16
+          ],
+          "imap": [
+            0,
+            3
+          ],
+          "ipsweep": [
+            0,
+            1080
+          ],
+          "land": [
+            1,
+            5
+          ],
+          "loadmodule": [
+            0,
+            3
+          ],
+          "multihop": [
+            0,
+            2
+          ],
+          "neptune": [
+            10124,
+            12364
+          ],
+          "nmap": [
+            88,
+            448
+          ],
+          "normal": [
+            7,
+            20203
+          ],
+          "perl": [
+            0,
+            1
+          ],
+          "phf": [
+            0,
+            1
+          ],
+          "pod": [
+            0,
+            60
+          ],
+          "portsweep": [
+            19,
+            879
+          ],
+          "rootkit": [
+            0,
+            3
+          ],
+          "satan": [
+            33,
+            1090
+          ],
+          "smurf": [
+            0,
+            794
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            268
+          ],
+          "warezclient": [
+            0,
+            267
+          ],
+          "warezmaster": [
+            0,
+            6
+          ]
+        },
+        "precision": 0.9993185358255452,
+        "recall": 0.5836033884814372
+      }
+    },
+    {
+      "cap": 0.005,
+      "cap_drift_test": 0.0,
+      "cap_drift_val": 0.0,
+      "fit": {
+        "attacks_blocked": 24221,
+        "attacks_total": 41041,
+        "collateral_rate": 0.0,
+        "macro_recall": 0.07417576845924893,
+        "normal_blocked": 0,
+        "normal_total": 47140,
+        "per_family": {
+          "back": [
+            0,
+            669
+          ],
+          "buffer_overflow": [
+            0,
+            21
+          ],
+          "ftp_write": [
+            0,
+            6
+          ],
+          "guess_passwd": [
+            0,
+            37
+          ],
+          "imap": [
+            0,
+            8
+          ],
+          "ipsweep": [
+            0,
+            2519
+          ],
+          "land": [
+            1,
+            13
+          ],
+          "loadmodule": [
+            0,
+            6
+          ],
+          "multihop": [
+            0,
+            5
+          ],
+          "neptune": [
+            24097,
+            28850
+          ],
+          "nmap": [
+            3,
+            1045
+          ],
+          "normal": [
+            0,
+            47140
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            3
+          ],
+          "pod": [
+            0,
+            141
+          ],
+          "portsweep": [
+            51,
+            2052
+          ],
+          "rootkit": [
+            0,
+            7
+          ],
+          "satan": [
+            69,
+            2543
+          ],
+          "smurf": [
+            0,
+            1852
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            624
+          ],
+          "warezclient": [
+            0,
+            623
+          ],
+          "warezmaster": [
+            0,
+            14
+          ]
+        },
+        "precision": 1.0,
+        "recall": 0.5901659316293463
+      },
+      "method": "B2",
+      "n_rules": 5,
+      "rule_text": "dst_host_srv_serror_rate >= 1 AND flag == S0 AND dst_host_diff_srv_rate >= 0.02 ; service == Z39_50 ; service == uucp ; service == bgp ; service == uucp_path",
+      "rules": [
+        [
+          [
+            "dst_host_srv_serror_rate",
+            ">=",
+            1.0
+          ],
+          [
+            "flag",
+            "==",
+            "S0"
+          ],
+          [
+            "dst_host_diff_srv_rate",
+            ">=",
+            0.02
+          ]
+        ],
+        [
+          [
+            "service",
+            "==",
+            "Z39_50"
+          ]
+        ],
+        [
+          [
+            "service",
+            "==",
+            "uucp"
+          ]
+        ],
+        [
+          [
+            "service",
+            "==",
+            "bgp"
+          ]
+        ],
+        [
+          [
+            "service",
+            "==",
+            "uucp_path"
+          ]
+        ]
+      ],
+      "test": {
+        "attacks_blocked": 1708,
+        "attacks_total": 12833,
+        "collateral_rate": 0.0,
+        "macro_recall": 0.030878568075107943,
+        "normal_blocked": 0,
+        "normal_total": 9711,
+        "per_family": {
+          "apache2": [
+            0,
+            737
+          ],
+          "back": [
+            0,
+            359
+          ],
+          "buffer_overflow": [
+            0,
+            20
+          ],
+          "ftp_write": [
+            0,
+            3
+          ],
+          "guess_passwd": [
+            0,
+            1231
+          ],
+          "httptunnel": [
+            0,
+            133
+          ],
+          "imap": [
+            0,
+            1
+          ],
+          "ipsweep": [
+            0,
+            141
+          ],
+          "land": [
+            1,
+            7
+          ],
+          "loadmodule": [
+            0,
+            2
+          ],
+          "mailbomb": [
+            0,
+            293
+          ],
+          "mscan": [
+            108,
+            996
+          ],
+          "multihop": [
+            0,
+            18
+          ],
+          "named": [
+            0,
+            17
+          ],
+          "neptune": [
+            1523,
+            4657
+          ],
+          "nmap": [
+            1,
+            73
+          ],
+          "normal": [
+            0,
+            9711
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            2
+          ],
+          "pod": [
+            0,
+            41
+          ],
+          "portsweep": [
+            0,
+            157
+          ],
+          "processtable": [
+            0,
+            685
+          ],
+          "ps": [
+            0,
+            15
+          ],
+          "rootkit": [
+            0,
+            13
+          ],
+          "saint": [
+            20,
+            319
+          ],
+          "satan": [
+            55,
+            735
+          ],
+          "sendmail": [
+            0,
+            14
+          ],
+          "smurf": [
+            0,
+            665
+          ],
+          "snmpgetattack": [
+            0,
+            178
+          ],
+          "snmpguess": [
+            0,
+            331
+          ],
+          "sqlattack": [
+            0,
+            2
+          ],
+          "teardrop": [
+            0,
+            12
+          ],
+          "udpstorm": [
+            0,
+            2
+          ],
+          "warezmaster": [
+            0,
+            944
+          ],
+          "worm": [
+            0,
+            2
+          ],
+          "xlock": [
+            0,
+            9
+          ],
+          "xsnoop": [
+            0,
+            4
+          ],
+          "xterm": [
+            0,
+            13
+          ]
+        },
+        "precision": 1.0,
+        "recall": 0.13309436608743083
+      },
+      "val": {
+        "attacks_blocked": 10383,
+        "attacks_total": 17589,
+        "collateral_rate": 0.0,
+        "macro_recall": 0.08236364270904072,
+        "normal_blocked": 0,
+        "normal_total": 20203,
+        "per_family": {
+          "back": [
+            0,
+            287
+          ],
+          "buffer_overflow": [
+            0,
+            9
+          ],
+          "ftp_write": [
+            0,
+            2
+          ],
+          "guess_passwd": [
+            0,
+            16
+          ],
+          "imap": [
+            0,
+            3
+          ],
+          "ipsweep": [
+            0,
+            1080
+          ],
+          "land": [
+            1,
+            5
+          ],
+          "loadmodule": [
+            0,
+            3
+          ],
+          "multihop": [
+            0,
+            2
+          ],
+          "neptune": [
+            10313,
+            12364
+          ],
+          "nmap": [
+            1,
+            448
+          ],
+          "normal": [
+            0,
+            20203
+          ],
+          "perl": [
+            0,
+            1
+          ],
+          "phf": [
+            0,
+            1
+          ],
+          "pod": [
+            0,
+            60
+          ],
+          "portsweep": [
+            33,
+            879
+          ],
+          "rootkit": [
+            0,
+            3
+          ],
+          "satan": [
+            35,
+            1090
+          ],
+          "smurf": [
+            0,
+            794
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            268
+          ],
+          "warezclient": [
+            0,
+            267
+          ],
+          "warezmaster": [
+            0,
+            6
+          ]
+        },
+        "precision": 1.0,
+        "recall": 0.5903121268974928
+      }
+    },
+    {
+      "cap": 0.01,
+      "cap_drift_test": -0.005409418752651676,
+      "cap_drift_val": -0.000509156415375034,
+      "fit": {
+        "attacks_blocked": 24139,
+        "attacks_total": 41041,
+        "collateral_rate": 0.005409418752651676,
+        "macro_recall": 0.07343126497182205,
+        "normal_blocked": 255,
+        "normal_total": 47140,
+        "per_family": {
+          "back": [
+            0,
+            669
+          ],
+          "buffer_overflow": [
+            0,
+            21
+          ],
+          "ftp_write": [
+            0,
+            6
+          ],
+          "guess_passwd": [
+            0,
+            37
+          ],
+          "imap": [
+            0,
+            8
+          ],
+          "ipsweep": [
+            0,
+            2519
+          ],
+          "land": [
+            13,
+            13
+          ],
+          "loadmodule": [
+            0,
+            6
+          ],
+          "multihop": [
+            0,
+            5
+          ],
+          "neptune": [
+            24025,
+            28850
+          ],
+          "nmap": [
+            0,
+            1045
+          ],
+          "normal": [
+            255,
+            47140
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            3
+          ],
+          "pod": [
+            0,
+            141
+          ],
+          "portsweep": [
+            35,
+            2052
+          ],
+          "rootkit": [
+            0,
+            7
+          ],
+          "satan": [
+            66,
+            2543
+          ],
+          "smurf": [
+            0,
+            1852
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            624
+          ],
+          "warezclient": [
+            0,
+            623
+          ],
+          "warezmaster": [
+            0,
+            14
+          ]
+        },
+        "precision": 0.9895466098220874,
+        "recall": 0.5881679296313442
+      },
+      "method": "B0",
+      "n_rules": 1,
+      "rule_text": "flag == S0",
+      "rules": [
+        [
+          [
+            "flag",
+            "==",
+            "S0"
+          ]
+        ]
+      ],
+      "test": {
+        "attacks_blocked": 2013,
+        "attacks_total": 12833,
+        "collateral_rate": 0.0,
+        "macro_recall": 0.05047063669462393,
+        "normal_blocked": 0,
+        "normal_total": 9711,
+        "per_family": {
+          "apache2": [
+            246,
+            737
+          ],
+          "back": [
+            0,
+            359
+          ],
+          "buffer_overflow": [
+            0,
+            20
+          ],
+          "ftp_write": [
+            0,
+            3
+          ],
+          "guess_passwd": [
+            0,
+            1231
+          ],
+          "httptunnel": [
+            0,
+            133
+          ],
+          "imap": [
+            0,
+            1
+          ],
+          "ipsweep": [
+            0,
+            141
+          ],
+          "land": [
+            7,
+            7
+          ],
+          "loadmodule": [
+            0,
+            2
+          ],
+          "mailbomb": [
+            0,
+            293
+          ],
+          "mscan": [
+            166,
+            996
+          ],
+          "multihop": [
+            0,
+            18
+          ],
+          "named": [
+            0,
+            17
+          ],
+          "neptune": [
+            1522,
+            4657
+          ],
+          "nmap": [
+            0,
+            73
+          ],
+          "normal": [
+            0,
+            9711
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            2
+          ],
+          "pod": [
+            0,
+            41
+          ],
+          "portsweep": [
+            0,
+            157
+          ],
+          "processtable": [
+            0,
+            685
+          ],
+          "ps": [
+            0,
+            15
+          ],
+          "rootkit": [
+            0,
+            13
+          ],
+          "saint": [
+            19,
+            319
+          ],
+          "satan": [
+            53,
+            735
+          ],
+          "sendmail": [
+            0,
+            14
+          ],
+          "smurf": [
+            0,
+            665
+          ],
+          "snmpgetattack": [
+            0,
+            178
+          ],
+          "snmpguess": [
+            0,
+            331
+          ],
+          "sqlattack": [
+            0,
+            2
+          ],
+          "teardrop": [
+            0,
+            12
+          ],
+          "udpstorm": [
+            0,
+            2
+          ],
+          "warezmaster": [
+            0,
+            944
+          ],
+          "worm": [
+            0,
+            2
+          ],
+          "xlock": [
+            0,
+            9
+          ],
+          "xsnoop": [
+            0,
+            4
+          ],
+          "xterm": [
+            0,
+            13
+          ]
+        },
+        "precision": 1.0,
+        "recall": 0.15686121717447207
+      },
+      "val": {
+        "attacks_blocked": 10358,
+        "attacks_total": 17589,
+        "collateral_rate": 0.004900262337276642,
+        "macro_recall": 0.08090323429238327,
+        "normal_blocked": 99,
+        "normal_total": 20203,
+        "per_family": {
+          "back": [
+            0,
+            287
+          ],
+          "buffer_overflow": [
+            0,
+            9
+          ],
+          "ftp_write": [
+            0,
+            2
+          ],
+          "guess_passwd": [
+            0,
+            16
+          ],
+          "imap": [
+            0,
+            3
+          ],
+          "ipsweep": [
+            0,
+            1080
+          ],
+          "land": [
+            5,
+            5
+          ],
+          "loadmodule": [
+            0,
+            3
+          ],
+          "multihop": [
+            0,
+            2
+          ],
+          "neptune": [
+            10301,
+            12364
+          ],
+          "nmap": [
+            0,
+            448
+          ],
+          "normal": [
+            99,
+            20203
+          ],
+          "perl": [
+            0,
+            1
+          ],
+          "phf": [
+            0,
+            1
+          ],
+          "pod": [
+            0,
+            60
+          ],
+          "portsweep": [
+            19,
+            879
+          ],
+          "rootkit": [
+            0,
+            3
+          ],
+          "satan": [
+            33,
+            1090
+          ],
+          "smurf": [
+            0,
+            794
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            268
+          ],
+          "warezclient": [
+            0,
+            267
+          ],
+          "warezmaster": [
+            0,
+            6
+          ]
+        },
+        "precision": 0.9905326575499666,
+        "recall": 0.5888907840127352
+      }
+    },
+    {
+      "cap": 0.01,
+      "cap_drift_test": -0.00024262055893034627,
+      "cap_drift_val": -0.00020506538313672443,
+      "fit": {
+        "attacks_blocked": 23958,
+        "attacks_total": 41041,
+        "collateral_rate": 0.0005515485787017395,
+        "macro_recall": 0.08818306901903815,
+        "normal_blocked": 26,
+        "normal_total": 47140,
+        "per_family": {
+          "back": [
+            0,
+            669
+          ],
+          "buffer_overflow": [
+            0,
+            21
+          ],
+          "ftp_write": [
+            0,
+            6
+          ],
+          "guess_passwd": [
+            1,
+            37
+          ],
+          "imap": [
+            2,
+            8
+          ],
+          "ipsweep": [
+            0,
+            2519
+          ],
+          "land": [
+            6,
+            13
+          ],
+          "loadmodule": [
+            0,
+            6
+          ],
+          "multihop": [
+            0,
+            5
+          ],
+          "neptune": [
+            23677,
+            28850
+          ],
+          "nmap": [
+            175,
+            1045
+          ],
+          "normal": [
+            26,
+            47140
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            3
+          ],
+          "pod": [
+            0,
+            141
+          ],
+          "portsweep": [
+            33,
+            2052
+          ],
+          "rootkit": [
+            0,
+            7
+          ],
+          "satan": [
+            63,
+            2543
+          ],
+          "smurf": [
+            0,
+            1852
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            624
+          ],
+          "warezclient": [
+            1,
+            623
+          ],
+          "warezmaster": [
+            0,
+            14
+          ]
+        },
+        "precision": 0.9989159439626417,
+        "recall": 0.5837577057089253
+      },
+      "method": "B1",
+      "n_rules": 1,
+      "rule_text": "dst_host_srv_serror_rate >= 1",
+      "rules": [
+        [
+          [
+            "dst_host_srv_serror_rate",
+            ">=",
+            1.0
+          ]
+        ]
+      ],
+      "test": {
+        "attacks_blocked": 1691,
+        "attacks_total": 12833,
+        "collateral_rate": 0.00030892801977139327,
+        "macro_recall": 0.08225806081076048,
+        "normal_blocked": 3,
+        "normal_total": 9711,
+        "per_family": {
+          "apache2": [
+            0,
+            737
+          ],
+          "back": [
+            0,
+            359
+          ],
+          "buffer_overflow": [
+            0,
+            20
+          ],
+          "ftp_write": [
+            0,
+            3
+          ],
+          "guess_passwd": [
+            0,
+            1231
+          ],
+          "httptunnel": [
+            0,
+            133
+          ],
+          "imap": [
+            0,
+            1
+          ],
+          "ipsweep": [
+            0,
+            141
+          ],
+          "land": [
+            5,
+            7
+          ],
+          "loadmodule": [
+            0,
+            2
+          ],
+          "mailbomb": [
+            0,
+            293
+          ],
+          "mscan": [
+            127,
+            996
+          ],
+          "multihop": [
+            0,
+            18
+          ],
+          "named": [
+            0,
+            17
+          ],
+          "neptune": [
+            1413,
+            4657
+          ],
+          "nmap": [
+            73,
+            73
+          ],
+          "normal": [
+            3,
+            9711
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            2
+          ],
+          "pod": [
+            0,
+            41
+          ],
+          "portsweep": [
+            0,
+            157
+          ],
+          "processtable": [
+            0,
+            685
+          ],
+          "ps": [
+            0,
+            15
+          ],
+          "rootkit": [
+            0,
+            13
+          ],
+          "saint": [
+            19,
+            319
+          ],
+          "satan": [
+            53,
+            735
+          ],
+          "sendmail": [
+            0,
+            14
+          ],
+          "smurf": [
+            0,
+            665
+          ],
+          "snmpgetattack": [
+            0,
+            178
+          ],
+          "snmpguess": [
+            0,
+            331
+          ],
+          "sqlattack": [
+            0,
+            2
+          ],
+          "teardrop": [
+            0,
+            12
+          ],
+          "udpstorm": [
+            0,
+            2
+          ],
+          "warezmaster": [
+            0,
+            944
+          ],
+          "worm": [
+            0,
+            2
+          ],
+          "xlock": [
+            0,
+            9
+          ],
+          "xsnoop": [
+            1,
+            4
+          ],
+          "xterm": [
+            0,
+            13
+          ]
+        },
+        "precision": 0.9982290436835891,
+        "recall": 0.13176965635471052
+      },
+      "val": {
+        "attacks_blocked": 10265,
+        "attacks_total": 17589,
+        "collateral_rate": 0.0003464831955650151,
+        "macro_recall": 0.09704496491673797,
+        "normal_blocked": 7,
+        "normal_total": 20203,
+        "per_family": {
+          "back": [
+            0,
+            287
+          ],
+          "buffer_overflow": [
+            0,
+            9
+          ],
+          "ftp_write": [
+            0,
+            2
+          ],
+          "guess_passwd": [
+            0,
+            16
+          ],
+          "imap": [
+            0,
+            3
+          ],
+          "ipsweep": [
+            0,
+            1080
+          ],
+          "land": [
+            1,
+            5
+          ],
+          "loadmodule": [
+            0,
+            3
+          ],
+          "multihop": [
+            0,
+            2
+          ],
+          "neptune": [
+            10124,
+            12364
+          ],
+          "nmap": [
+            88,
+            448
+          ],
+          "normal": [
+            7,
+            20203
+          ],
+          "perl": [
+            0,
+            1
+          ],
+          "phf": [
+            0,
+            1
+          ],
+          "pod": [
+            0,
+            60
+          ],
+          "portsweep": [
+            19,
+            879
+          ],
+          "rootkit": [
+            0,
+            3
+          ],
+          "satan": [
+            33,
+            1090
+          ],
+          "smurf": [
+            0,
+            794
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            268
+          ],
+          "warezclient": [
+            0,
+            267
+          ],
+          "warezmaster": [
+            0,
+            6
+          ]
+        },
+        "precision": 0.9993185358255452,
+        "recall": 0.5836033884814372
+      }
+    },
+    {
+      "cap": 0.01,
+      "cap_drift_test": 0.0,
+      "cap_drift_val": 0.0,
+      "fit": {
+        "attacks_blocked": 24221,
+        "attacks_total": 41041,
+        "collateral_rate": 0.0,
+        "macro_recall": 0.07417576845924893,
+        "normal_blocked": 0,
+        "normal_total": 47140,
+        "per_family": {
+          "back": [
+            0,
+            669
+          ],
+          "buffer_overflow": [
+            0,
+            21
+          ],
+          "ftp_write": [
+            0,
+            6
+          ],
+          "guess_passwd": [
+            0,
+            37
+          ],
+          "imap": [
+            0,
+            8
+          ],
+          "ipsweep": [
+            0,
+            2519
+          ],
+          "land": [
+            1,
+            13
+          ],
+          "loadmodule": [
+            0,
+            6
+          ],
+          "multihop": [
+            0,
+            5
+          ],
+          "neptune": [
+            24097,
+            28850
+          ],
+          "nmap": [
+            3,
+            1045
+          ],
+          "normal": [
+            0,
+            47140
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            3
+          ],
+          "pod": [
+            0,
+            141
+          ],
+          "portsweep": [
+            51,
+            2052
+          ],
+          "rootkit": [
+            0,
+            7
+          ],
+          "satan": [
+            69,
+            2543
+          ],
+          "smurf": [
+            0,
+            1852
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            624
+          ],
+          "warezclient": [
+            0,
+            623
+          ],
+          "warezmaster": [
+            0,
+            14
+          ]
+        },
+        "precision": 1.0,
+        "recall": 0.5901659316293463
+      },
+      "method": "B2",
+      "n_rules": 5,
+      "rule_text": "dst_host_srv_serror_rate >= 1 AND flag == S0 AND dst_host_diff_srv_rate >= 0.02 ; service == Z39_50 ; service == uucp ; service == bgp ; service == uucp_path",
+      "rules": [
+        [
+          [
+            "dst_host_srv_serror_rate",
+            ">=",
+            1.0
+          ],
+          [
+            "flag",
+            "==",
+            "S0"
+          ],
+          [
+            "dst_host_diff_srv_rate",
+            ">=",
+            0.02
+          ]
+        ],
+        [
+          [
+            "service",
+            "==",
+            "Z39_50"
+          ]
+        ],
+        [
+          [
+            "service",
+            "==",
+            "uucp"
+          ]
+        ],
+        [
+          [
+            "service",
+            "==",
+            "bgp"
+          ]
+        ],
+        [
+          [
+            "service",
+            "==",
+            "uucp_path"
+          ]
+        ]
+      ],
+      "test": {
+        "attacks_blocked": 1708,
+        "attacks_total": 12833,
+        "collateral_rate": 0.0,
+        "macro_recall": 0.030878568075107943,
+        "normal_blocked": 0,
+        "normal_total": 9711,
+        "per_family": {
+          "apache2": [
+            0,
+            737
+          ],
+          "back": [
+            0,
+            359
+          ],
+          "buffer_overflow": [
+            0,
+            20
+          ],
+          "ftp_write": [
+            0,
+            3
+          ],
+          "guess_passwd": [
+            0,
+            1231
+          ],
+          "httptunnel": [
+            0,
+            133
+          ],
+          "imap": [
+            0,
+            1
+          ],
+          "ipsweep": [
+            0,
+            141
+          ],
+          "land": [
+            1,
+            7
+          ],
+          "loadmodule": [
+            0,
+            2
+          ],
+          "mailbomb": [
+            0,
+            293
+          ],
+          "mscan": [
+            108,
+            996
+          ],
+          "multihop": [
+            0,
+            18
+          ],
+          "named": [
+            0,
+            17
+          ],
+          "neptune": [
+            1523,
+            4657
+          ],
+          "nmap": [
+            1,
+            73
+          ],
+          "normal": [
+            0,
+            9711
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            2
+          ],
+          "pod": [
+            0,
+            41
+          ],
+          "portsweep": [
+            0,
+            157
+          ],
+          "processtable": [
+            0,
+            685
+          ],
+          "ps": [
+            0,
+            15
+          ],
+          "rootkit": [
+            0,
+            13
+          ],
+          "saint": [
+            20,
+            319
+          ],
+          "satan": [
+            55,
+            735
+          ],
+          "sendmail": [
+            0,
+            14
+          ],
+          "smurf": [
+            0,
+            665
+          ],
+          "snmpgetattack": [
+            0,
+            178
+          ],
+          "snmpguess": [
+            0,
+            331
+          ],
+          "sqlattack": [
+            0,
+            2
+          ],
+          "teardrop": [
+            0,
+            12
+          ],
+          "udpstorm": [
+            0,
+            2
+          ],
+          "warezmaster": [
+            0,
+            944
+          ],
+          "worm": [
+            0,
+            2
+          ],
+          "xlock": [
+            0,
+            9
+          ],
+          "xsnoop": [
+            0,
+            4
+          ],
+          "xterm": [
+            0,
+            13
+          ]
+        },
+        "precision": 1.0,
+        "recall": 0.13309436608743083
+      },
+      "val": {
+        "attacks_blocked": 10383,
+        "attacks_total": 17589,
+        "collateral_rate": 0.0,
+        "macro_recall": 0.08236364270904072,
+        "normal_blocked": 0,
+        "normal_total": 20203,
+        "per_family": {
+          "back": [
+            0,
+            287
+          ],
+          "buffer_overflow": [
+            0,
+            9
+          ],
+          "ftp_write": [
+            0,
+            2
+          ],
+          "guess_passwd": [
+            0,
+            16
+          ],
+          "imap": [
+            0,
+            3
+          ],
+          "ipsweep": [
+            0,
+            1080
+          ],
+          "land": [
+            1,
+            5
+          ],
+          "loadmodule": [
+            0,
+            3
+          ],
+          "multihop": [
+            0,
+            2
+          ],
+          "neptune": [
+            10313,
+            12364
+          ],
+          "nmap": [
+            1,
+            448
+          ],
+          "normal": [
+            0,
+            20203
+          ],
+          "perl": [
+            0,
+            1
+          ],
+          "phf": [
+            0,
+            1
+          ],
+          "pod": [
+            0,
+            60
+          ],
+          "portsweep": [
+            33,
+            879
+          ],
+          "rootkit": [
+            0,
+            3
+          ],
+          "satan": [
+            35,
+            1090
+          ],
+          "smurf": [
+            0,
+            794
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            268
+          ],
+          "warezclient": [
+            0,
+            267
+          ],
+          "warezmaster": [
+            0,
+            6
+          ]
+        },
+        "precision": 1.0,
+        "recall": 0.5903121268974928
+      }
+    },
+    {
+      "cap": 0.02,
+      "cap_drift_test": -0.005409418752651676,
+      "cap_drift_val": -0.000509156415375034,
+      "fit": {
+        "attacks_blocked": 24139,
+        "attacks_total": 41041,
+        "collateral_rate": 0.005409418752651676,
+        "macro_recall": 0.07343126497182205,
+        "normal_blocked": 255,
+        "normal_total": 47140,
+        "per_family": {
+          "back": [
+            0,
+            669
+          ],
+          "buffer_overflow": [
+            0,
+            21
+          ],
+          "ftp_write": [
+            0,
+            6
+          ],
+          "guess_passwd": [
+            0,
+            37
+          ],
+          "imap": [
+            0,
+            8
+          ],
+          "ipsweep": [
+            0,
+            2519
+          ],
+          "land": [
+            13,
+            13
+          ],
+          "loadmodule": [
+            0,
+            6
+          ],
+          "multihop": [
+            0,
+            5
+          ],
+          "neptune": [
+            24025,
+            28850
+          ],
+          "nmap": [
+            0,
+            1045
+          ],
+          "normal": [
+            255,
+            47140
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            3
+          ],
+          "pod": [
+            0,
+            141
+          ],
+          "portsweep": [
+            35,
+            2052
+          ],
+          "rootkit": [
+            0,
+            7
+          ],
+          "satan": [
+            66,
+            2543
+          ],
+          "smurf": [
+            0,
+            1852
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            624
+          ],
+          "warezclient": [
+            0,
+            623
+          ],
+          "warezmaster": [
+            0,
+            14
+          ]
+        },
+        "precision": 0.9895466098220874,
+        "recall": 0.5881679296313442
+      },
+      "method": "B0",
+      "n_rules": 1,
+      "rule_text": "flag == S0",
+      "rules": [
+        [
+          [
+            "flag",
+            "==",
+            "S0"
+          ]
+        ]
+      ],
+      "test": {
+        "attacks_blocked": 2013,
+        "attacks_total": 12833,
+        "collateral_rate": 0.0,
+        "macro_recall": 0.05047063669462393,
+        "normal_blocked": 0,
+        "normal_total": 9711,
+        "per_family": {
+          "apache2": [
+            246,
+            737
+          ],
+          "back": [
+            0,
+            359
+          ],
+          "buffer_overflow": [
+            0,
+            20
+          ],
+          "ftp_write": [
+            0,
+            3
+          ],
+          "guess_passwd": [
+            0,
+            1231
+          ],
+          "httptunnel": [
+            0,
+            133
+          ],
+          "imap": [
+            0,
+            1
+          ],
+          "ipsweep": [
+            0,
+            141
+          ],
+          "land": [
+            7,
+            7
+          ],
+          "loadmodule": [
+            0,
+            2
+          ],
+          "mailbomb": [
+            0,
+            293
+          ],
+          "mscan": [
+            166,
+            996
+          ],
+          "multihop": [
+            0,
+            18
+          ],
+          "named": [
+            0,
+            17
+          ],
+          "neptune": [
+            1522,
+            4657
+          ],
+          "nmap": [
+            0,
+            73
+          ],
+          "normal": [
+            0,
+            9711
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            2
+          ],
+          "pod": [
+            0,
+            41
+          ],
+          "portsweep": [
+            0,
+            157
+          ],
+          "processtable": [
+            0,
+            685
+          ],
+          "ps": [
+            0,
+            15
+          ],
+          "rootkit": [
+            0,
+            13
+          ],
+          "saint": [
+            19,
+            319
+          ],
+          "satan": [
+            53,
+            735
+          ],
+          "sendmail": [
+            0,
+            14
+          ],
+          "smurf": [
+            0,
+            665
+          ],
+          "snmpgetattack": [
+            0,
+            178
+          ],
+          "snmpguess": [
+            0,
+            331
+          ],
+          "sqlattack": [
+            0,
+            2
+          ],
+          "teardrop": [
+            0,
+            12
+          ],
+          "udpstorm": [
+            0,
+            2
+          ],
+          "warezmaster": [
+            0,
+            944
+          ],
+          "worm": [
+            0,
+            2
+          ],
+          "xlock": [
+            0,
+            9
+          ],
+          "xsnoop": [
+            0,
+            4
+          ],
+          "xterm": [
+            0,
+            13
+          ]
+        },
+        "precision": 1.0,
+        "recall": 0.15686121717447207
+      },
+      "val": {
+        "attacks_blocked": 10358,
+        "attacks_total": 17589,
+        "collateral_rate": 0.004900262337276642,
+        "macro_recall": 0.08090323429238327,
+        "normal_blocked": 99,
+        "normal_total": 20203,
+        "per_family": {
+          "back": [
+            0,
+            287
+          ],
+          "buffer_overflow": [
+            0,
+            9
+          ],
+          "ftp_write": [
+            0,
+            2
+          ],
+          "guess_passwd": [
+            0,
+            16
+          ],
+          "imap": [
+            0,
+            3
+          ],
+          "ipsweep": [
+            0,
+            1080
+          ],
+          "land": [
+            5,
+            5
+          ],
+          "loadmodule": [
+            0,
+            3
+          ],
+          "multihop": [
+            0,
+            2
+          ],
+          "neptune": [
+            10301,
+            12364
+          ],
+          "nmap": [
+            0,
+            448
+          ],
+          "normal": [
+            99,
+            20203
+          ],
+          "perl": [
+            0,
+            1
+          ],
+          "phf": [
+            0,
+            1
+          ],
+          "pod": [
+            0,
+            60
+          ],
+          "portsweep": [
+            19,
+            879
+          ],
+          "rootkit": [
+            0,
+            3
+          ],
+          "satan": [
+            33,
+            1090
+          ],
+          "smurf": [
+            0,
+            794
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            268
+          ],
+          "warezclient": [
+            0,
+            267
+          ],
+          "warezmaster": [
+            0,
+            6
+          ]
+        },
+        "precision": 0.9905326575499666,
+        "recall": 0.5888907840127352
+      }
+    },
+    {
+      "cap": 0.02,
+      "cap_drift_test": -0.00024262055893034627,
+      "cap_drift_val": -0.00020506538313672443,
+      "fit": {
+        "attacks_blocked": 23958,
+        "attacks_total": 41041,
+        "collateral_rate": 0.0005515485787017395,
+        "macro_recall": 0.08818306901903815,
+        "normal_blocked": 26,
+        "normal_total": 47140,
+        "per_family": {
+          "back": [
+            0,
+            669
+          ],
+          "buffer_overflow": [
+            0,
+            21
+          ],
+          "ftp_write": [
+            0,
+            6
+          ],
+          "guess_passwd": [
+            1,
+            37
+          ],
+          "imap": [
+            2,
+            8
+          ],
+          "ipsweep": [
+            0,
+            2519
+          ],
+          "land": [
+            6,
+            13
+          ],
+          "loadmodule": [
+            0,
+            6
+          ],
+          "multihop": [
+            0,
+            5
+          ],
+          "neptune": [
+            23677,
+            28850
+          ],
+          "nmap": [
+            175,
+            1045
+          ],
+          "normal": [
+            26,
+            47140
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            3
+          ],
+          "pod": [
+            0,
+            141
+          ],
+          "portsweep": [
+            33,
+            2052
+          ],
+          "rootkit": [
+            0,
+            7
+          ],
+          "satan": [
+            63,
+            2543
+          ],
+          "smurf": [
+            0,
+            1852
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            624
+          ],
+          "warezclient": [
+            1,
+            623
+          ],
+          "warezmaster": [
+            0,
+            14
+          ]
+        },
+        "precision": 0.9989159439626417,
+        "recall": 0.5837577057089253
+      },
+      "method": "B1",
+      "n_rules": 1,
+      "rule_text": "dst_host_srv_serror_rate >= 1",
+      "rules": [
+        [
+          [
+            "dst_host_srv_serror_rate",
+            ">=",
+            1.0
+          ]
+        ]
+      ],
+      "test": {
+        "attacks_blocked": 1691,
+        "attacks_total": 12833,
+        "collateral_rate": 0.00030892801977139327,
+        "macro_recall": 0.08225806081076048,
+        "normal_blocked": 3,
+        "normal_total": 9711,
+        "per_family": {
+          "apache2": [
+            0,
+            737
+          ],
+          "back": [
+            0,
+            359
+          ],
+          "buffer_overflow": [
+            0,
+            20
+          ],
+          "ftp_write": [
+            0,
+            3
+          ],
+          "guess_passwd": [
+            0,
+            1231
+          ],
+          "httptunnel": [
+            0,
+            133
+          ],
+          "imap": [
+            0,
+            1
+          ],
+          "ipsweep": [
+            0,
+            141
+          ],
+          "land": [
+            5,
+            7
+          ],
+          "loadmodule": [
+            0,
+            2
+          ],
+          "mailbomb": [
+            0,
+            293
+          ],
+          "mscan": [
+            127,
+            996
+          ],
+          "multihop": [
+            0,
+            18
+          ],
+          "named": [
+            0,
+            17
+          ],
+          "neptune": [
+            1413,
+            4657
+          ],
+          "nmap": [
+            73,
+            73
+          ],
+          "normal": [
+            3,
+            9711
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            2
+          ],
+          "pod": [
+            0,
+            41
+          ],
+          "portsweep": [
+            0,
+            157
+          ],
+          "processtable": [
+            0,
+            685
+          ],
+          "ps": [
+            0,
+            15
+          ],
+          "rootkit": [
+            0,
+            13
+          ],
+          "saint": [
+            19,
+            319
+          ],
+          "satan": [
+            53,
+            735
+          ],
+          "sendmail": [
+            0,
+            14
+          ],
+          "smurf": [
+            0,
+            665
+          ],
+          "snmpgetattack": [
+            0,
+            178
+          ],
+          "snmpguess": [
+            0,
+            331
+          ],
+          "sqlattack": [
+            0,
+            2
+          ],
+          "teardrop": [
+            0,
+            12
+          ],
+          "udpstorm": [
+            0,
+            2
+          ],
+          "warezmaster": [
+            0,
+            944
+          ],
+          "worm": [
+            0,
+            2
+          ],
+          "xlock": [
+            0,
+            9
+          ],
+          "xsnoop": [
+            1,
+            4
+          ],
+          "xterm": [
+            0,
+            13
+          ]
+        },
+        "precision": 0.9982290436835891,
+        "recall": 0.13176965635471052
+      },
+      "val": {
+        "attacks_blocked": 10265,
+        "attacks_total": 17589,
+        "collateral_rate": 0.0003464831955650151,
+        "macro_recall": 0.09704496491673797,
+        "normal_blocked": 7,
+        "normal_total": 20203,
+        "per_family": {
+          "back": [
+            0,
+            287
+          ],
+          "buffer_overflow": [
+            0,
+            9
+          ],
+          "ftp_write": [
+            0,
+            2
+          ],
+          "guess_passwd": [
+            0,
+            16
+          ],
+          "imap": [
+            0,
+            3
+          ],
+          "ipsweep": [
+            0,
+            1080
+          ],
+          "land": [
+            1,
+            5
+          ],
+          "loadmodule": [
+            0,
+            3
+          ],
+          "multihop": [
+            0,
+            2
+          ],
+          "neptune": [
+            10124,
+            12364
+          ],
+          "nmap": [
+            88,
+            448
+          ],
+          "normal": [
+            7,
+            20203
+          ],
+          "perl": [
+            0,
+            1
+          ],
+          "phf": [
+            0,
+            1
+          ],
+          "pod": [
+            0,
+            60
+          ],
+          "portsweep": [
+            19,
+            879
+          ],
+          "rootkit": [
+            0,
+            3
+          ],
+          "satan": [
+            33,
+            1090
+          ],
+          "smurf": [
+            0,
+            794
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            268
+          ],
+          "warezclient": [
+            0,
+            267
+          ],
+          "warezmaster": [
+            0,
+            6
+          ]
+        },
+        "precision": 0.9993185358255452,
+        "recall": 0.5836033884814372
+      }
+    },
+    {
+      "cap": 0.02,
+      "cap_drift_test": 0.00020595201318092884,
+      "cap_drift_val": 0.0,
+      "fit": {
+        "attacks_blocked": 24384,
+        "attacks_total": 41041,
+        "collateral_rate": 0.0,
+        "macro_recall": 0.0872374328547759,
+        "normal_blocked": 0,
+        "normal_total": 47140,
+        "per_family": {
+          "back": [
+            0,
+            669
+          ],
+          "buffer_overflow": [
+            0,
+            21
+          ],
+          "ftp_write": [
+            0,
+            6
+          ],
+          "guess_passwd": [
+            0,
+            37
+          ],
+          "imap": [
+            0,
+            8
+          ],
+          "ipsweep": [
+            0,
+            2519
+          ],
+          "land": [
+            1,
+            13
+          ],
+          "loadmodule": [
+            0,
+            6
+          ],
+          "multihop": [
+            0,
+            5
+          ],
+          "neptune": [
+            24109,
+            28850
+          ],
+          "nmap": [
+            175,
+            1045
+          ],
+          "normal": [
+            0,
+            47140
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            3
+          ],
+          "pod": [
+            0,
+            141
+          ],
+          "portsweep": [
+            38,
+            2052
+          ],
+          "rootkit": [
+            0,
+            7
+          ],
+          "satan": [
+            60,
+            2543
+          ],
+          "smurf": [
+            0,
+            1852
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            624
+          ],
+          "warezclient": [
+            1,
+            623
+          ],
+          "warezmaster": [
+            0,
+            14
+          ]
+        },
+        "precision": 1.0,
+        "recall": 0.5941375697473259
+      },
+      "method": "B2",
+      "n_rules": 5,
+      "rule_text": "dst_host_srv_serror_rate >= 1 AND dst_host_serror_rate >= 0.09 AND dst_host_count >= 3 ; service == Z39_50 ; service == uucp ; service == bgp ; service == uucp_path",
+      "rules": [
+        [
+          [
+            "dst_host_srv_serror_rate",
+            ">=",
+            1.0
+          ],
+          [
+            "dst_host_serror_rate",
+            ">=",
+            0.09
+          ],
+          [
+            "dst_host_count",
+            ">=",
+            3.0
+          ]
+        ],
+        [
+          [
+            "service",
+            "==",
+            "Z39_50"
+          ]
+        ],
+        [
+          [
+            "service",
+            "==",
+            "uucp"
+          ]
+        ],
+        [
+          [
+            "service",
+            "==",
+            "bgp"
+          ]
+        ],
+        [
+          [
+            "service",
+            "==",
+            "uucp_path"
+          ]
+        ]
+      ],
+      "test": {
+        "attacks_blocked": 1778,
+        "attacks_total": 12833,
+        "collateral_rate": 0.00020595201318092884,
+        "macro_recall": 0.07940179761098046,
+        "normal_blocked": 2,
+        "normal_total": 9711,
+        "per_family": {
+          "apache2": [
+            0,
+            737
+          ],
+          "back": [
+            0,
+            359
+          ],
+          "buffer_overflow": [
+            0,
+            20
+          ],
+          "ftp_write": [
+            0,
+            3
+          ],
+          "guess_passwd": [
+            0,
+            1231
+          ],
+          "httptunnel": [
+            0,
+            133
+          ],
+          "imap": [
+            0,
+            1
+          ],
+          "ipsweep": [
+            0,
+            141
+          ],
+          "land": [
+            0,
+            7
+          ],
+          "loadmodule": [
+            0,
+            2
+          ],
+          "mailbomb": [
+            0,
+            293
+          ],
+          "mscan": [
+            125,
+            996
+          ],
+          "multihop": [
+            0,
+            18
+          ],
+          "named": [
+            0,
+            17
+          ],
+          "neptune": [
+            1545,
+            4657
+          ],
+          "nmap": [
+            73,
+            73
+          ],
+          "normal": [
+            2,
+            9711
+          ],
+          "perl": [
+            0,
+            2
+          ],
+          "phf": [
+            0,
+            2
+          ],
+          "pod": [
+            0,
+            41
+          ],
+          "portsweep": [
+            0,
+            157
+          ],
+          "processtable": [
+            0,
+            685
+          ],
+          "ps": [
+            0,
+            15
+          ],
+          "rootkit": [
+            0,
+            13
+          ],
+          "saint": [
+            2,
+            319
+          ],
+          "satan": [
+            33,
+            735
+          ],
+          "sendmail": [
+            0,
+            14
+          ],
+          "smurf": [
+            0,
+            665
+          ],
+          "snmpgetattack": [
+            0,
+            178
+          ],
+          "snmpguess": [
+            0,
+            331
+          ],
+          "sqlattack": [
+            0,
+            2
+          ],
+          "teardrop": [
+            0,
+            12
+          ],
+          "udpstorm": [
+            0,
+            2
+          ],
+          "warezmaster": [
+            0,
+            944
+          ],
+          "worm": [
+            0,
+            2
+          ],
+          "xlock": [
+            0,
+            9
+          ],
+          "xsnoop": [
+            0,
+            4
+          ],
+          "xterm": [
+            0,
+            13
+          ]
+        },
+        "precision": 0.998876404494382,
+        "recall": 0.13854905322216163
+      },
+      "val": {
+        "attacks_blocked": 10448,
+        "attacks_total": 17589,
+        "collateral_rate": 0.0,
+        "macro_recall": 0.09772195778451427,
+        "normal_blocked": 0,
+        "normal_total": 20203,
+        "per_family": {
+          "back": [
+            0,
+            287
+          ],
+          "buffer_overflow": [
+            0,
+            9
+          ],
+          "ftp_write": [
+            0,
+            2
+          ],
+          "guess_passwd": [
+            0,
+            16
+          ],
+          "imap": [
+            0,
+            3
+          ],
+          "ipsweep": [
+            0,
+            1080
+          ],
+          "land": [
+            0,
+            5
+          ],
+          "loadmodule": [
+            0,
+            3
+          ],
+          "multihop": [
+            0,
+            2
+          ],
+          "neptune": [
+            10317,
+            12364
+          ],
+          "nmap": [
+            88,
+            448
+          ],
+          "normal": [
+            0,
+            20203
+          ],
+          "perl": [
+            0,
+            1
+          ],
+          "phf": [
+            0,
+            1
+          ],
+          "pod": [
+            0,
+            60
+          ],
+          "portsweep": [
+            21,
+            879
+          ],
+          "rootkit": [
+            0,
+            3
+          ],
+          "satan": [
+            22,
+            1090
+          ],
+          "smurf": [
+            0,
+            794
+          ],
+          "spy": [
+            0,
+            1
+          ],
+          "teardrop": [
+            0,
+            268
+          ],
+          "warezclient": [
+            0,
+            267
+          ],
+          "warezmaster": [
+            0,
+            6
+          ]
+        },
+        "precision": 1.0,
+        "recall": 0.5940076183978623
+      }
+    }
+  ],
+  "fallback_max_conds": null,
+  "max_conds": 3,
+  "max_rules": 5,
+  "min_tp": 20,
+  "runtime_s": 17.29,
+  "seed": 42,
+  "split_sizes": {
+    "fit": 88181,
+    "test": 22544,
+    "val": 37792
+  },
+  "timestamp": "2026-10-09T13:34:53.897896+00:00"
+}
